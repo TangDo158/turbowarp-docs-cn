@@ -1,7 +1,7 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'TurboWarp Documentation',
-  url: 'https://docs.turbowarp.org',
+  url: 'https://furryr.github.io/turbowarp-docs-cn/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
