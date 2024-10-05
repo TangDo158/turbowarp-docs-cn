@@ -15,7 +15,7 @@ import settingsMenu from './rich-presence-settings-menu.png';
 
 我们不太确定 Scratch 社区规则是否允许我们在这里提到这个聊天软件的名字，所以英文版中下述对 Discord 的指代均为 "Chat App"。然而为了方便原生中文用户阅读，这里仍然会保留 "Discord" 的名称。
 
-同时，Discord 的中国版，KOOK 可能也支持游戏状态显示功能，但译者不确定 Turbowarp 是否可以正常连接到 KOOK，请自行尝试。
+同时，Discord 的中国版，KOOK 可能也支持游戏状态显示功能，但译者不确定 TurboWarp 是否可以正常连接到 KOOK，请自行尝试。
 
 ## 启用 Discord 状态 {#enable}
 
@@ -36,25 +36,25 @@ import settingsMenu from './rich-presence-settings-menu.png';
 
 ### Windows {#windows}
 
-不管你怎么安装 Turbowarp 桌面版和 Discord，游戏状态显示功能都能用。
+不管你怎么安装 TurboWarp 桌面版和 Discord，游戏状态显示功能都能用。
 
 ### macOS {#mac}
 
 :::warning
-从 Mac App Store 下载的 Turbowarp 桌面版无法使用游戏状态显示功能。
+从 Mac App Store 下载的 TurboWarp 桌面版无法使用游戏状态显示功能。
 :::
 
 ### Linux {#linux}
 
-若期望获得最好体验，则请将 Turbowarp 桌面版从 `.deb` 软件包、Debian 仓库、AUR、AppImage 或者 tarball 以原生应用程序安装。以 Flatpak 形式安装的 Turbowarp 桌面版可能需要手动覆盖权限，而以 Snap 形式安装的 Turbowarp 桌面版则完全没戏。关于兼容性，请查看以下表格：
+若期望获得最好体验，则请将 TurboWarp 桌面版从 `.deb` 软件包、Debian 仓库、AUR、AppImage 或者 tarball 以原生应用程序安装。以 Flatpak 形式安装的 TurboWarp 桌面版可能需要手动覆盖权限，而以 Snap 形式安装的 TurboWarp 桌面版则完全没戏。关于兼容性，请查看以下表格：
 
 | | 作为原生应用程序安装的 Discord | 从 Flatpak 安装的 Discord | 从 Snap 安装的 Discord |
 | :-: | :-: | :-: | :-: |
-| **作为原生应用程序安装的 Turbowarp 桌面版** | ✅ | ✅ | ✅ |
-| **从 Flatpak 安装的 Turbowarp 桌面版** | 见下 | ✅ | 见下 |
-| **从 Snap 安装的 Turbowarp 桌面版** | ❌ | ❌ | ❌ |
+| **作为原生应用程序安装的 TurboWarp 桌面版** | ✅ | ✅ | ✅ |
+| **从 Flatpak 安装的 TurboWarp 桌面版** | 见下 | ✅ | 见下 |
+| **从 Snap 安装的 TurboWarp 桌面版** | ❌ | ❌ | ❌ |
 
-对于从 Flatpak 安装的 Turbowarp 桌面版，你需要在终端中运行下列命令然后重启 Turbowarp 桌面版来让游戏状态显示功能正常运行。
+对于从 Flatpak 安装的 TurboWarp 桌面版，你需要在终端中运行下列命令然后重启 TurboWarp 桌面版来让游戏状态显示功能正常运行。
 
 ```bash
 # 用于作为原生应用程序安装的 Discord
@@ -63,7 +63,7 @@ flatpak override org.turbowarp.TurboWarp --user --filesystem=xdg-run/$(printf "\
 flatpak override org.turbowarp.TurboWarp --user --filesystem=xdg-run/snap.$(printf "\x64\x69\x73\x63\x6f\x72\x64"):create
 ```
 
-可惜，仍然有一个小缺陷：如果 Turbowarp 桌面版先于 Discord 启动，则游戏状态显示无法正常运行。
+可惜，仍然有一个小缺陷：如果 TurboWarp 桌面版先于 Discord 启动，则游戏状态显示无法正常运行。
 
 上述赋予的权限可以使用以下命令撤回：
 

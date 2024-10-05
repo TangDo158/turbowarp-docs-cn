@@ -6,7 +6,7 @@ hide_table_of_contents: true
 # 动态地调整舞台的大小
 
 :::info
-此页面是关于 [Turbowarp 打包器](https://turbowarp.org/) 的。
+此页面是关于 [TurboWarp 打包器](https://turbowarp.org/) 的。
 :::
 
 动态舞台调整将改变舞台的大小，以匹配其显示的宽高比和分辨率。

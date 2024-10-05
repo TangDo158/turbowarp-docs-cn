@@ -8,7 +8,7 @@ hide_table_of_contents: true
 
 :::note
 ## 只有那些 "隐藏的" URL 参数会在此处列出。 {#only-hidden-url-parameters-are-listed-here}
-Turbowarp 会自动将形如加速模式、自定义帧率、高清画笔之类的一般设定保存在 URL 中，但一些高级选项需要手动应用。此文档只包含这些高级选项。
+TurboWarp 会自动将形如加速模式、自定义帧率、高清画笔之类的一般设定保存在 URL 中，但一些高级选项需要手动应用。此文档只包含这些高级选项。
 :::
 
 
@@ -20,17 +20,17 @@ https://turbowarp.org/443603478?username=测试用户名
 
 ## 云变量服务器 {#cloud_host}
 
-`cloud_host` 选项允许你修改 Turbowarp 将要连接到的云变量服务器，比如：
+`cloud_host` 选项允许你修改 TurboWarp 将要连接到的云变量服务器，比如：
 
 https://turbowarp.org/12785898?cloud_host=wss://clouddata.turbowarp.org
 
-在参数中包含 `ws://` 或者 `wss://` 是可选的，但我们推荐这样做。`wss://clouddata.turbowarp.org` 是 Turbowarp 使用的默认云变量服务器，所以实际上这个示例没有改变任何选项。由于新浏览器拥有额外的安全措施，不安全的 ws:// 未加密云变量服务器可能无法在 Turbowarp 上使用，因为 Turbowarp 使用 HTTPS (https://developer.mozilla.org/zh-TW/docs/Web/Security/Mixed_content)。
+在参数中包含 `ws://` 或者 `wss://` 是可选的，但我们推荐这样做。`wss://clouddata.turbowarp.org` 是 TurboWarp 使用的默认云变量服务器，所以实际上这个示例没有改变任何选项。由于新浏览器拥有额外的安全措施，不安全的 ws:// 未加密云变量服务器可能无法在 TurboWarp 上使用，因为 TurboWarp 使用 HTTPS (https://developer.mozilla.org/zh-TW/docs/Web/Security/Mixed_content)。
 
 :::note
 译者注：实际上不安全的云变量服务器是可以使用的，因为 MDN 关于“混合内容”的一节中没有包含不安全的 WebSocket。
 :::
 
-不能使用这个选项连接 Scratch 的云变量服务器，因为 Scratch 云变量服务器要求账户认证，而 Turbowarp 不支持进行认证。
+不能使用这个选项连接 Scratch 的云变量服务器，因为 Scratch 云变量服务器要求账户认证，而 TurboWarp 不支持进行认证。
 
 ## 自定义扩展 {#extension}
 
@@ -39,7 +39,7 @@ https://turbowarp.org/12785898?cloud_host=wss://clouddata.turbowarp.org
 ## 缩放 {#scale}
 
 :::warning
-这个选项已经被废弃。它在未来可能会被移除，并且已经在 Turbowarp 英语文档中被删除。中文版文档恢复了这一节，但你不应再使用这个选项。
+这个选项已经被废弃。它在未来可能会被移除，并且已经在 TurboWarp 英语文档中被删除。中文版文档恢复了这一节，但你不应再使用这个选项。
 :::
 
 `scale` 选项控制玩家全屏时的最大相对缩放比率。
@@ -54,7 +54,7 @@ https://turbowarp.org/?nocompile
 
 ## 项目 URL {#project_url}
 
-`project_url` 选项指定 Turbowarp 应当从哪个 URL 下载作品。请不要同一般的 Scratch 项目 ID 一同使用。
+`project_url` 选项指定 TurboWarp 应当从哪个 URL 下载作品。请不要同一般的 Scratch 项目 ID 一同使用。
 
 https://turbowarp.org/?project_url=packager.turbowarp.org/example.sb3
 

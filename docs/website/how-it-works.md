@@ -3,9 +3,9 @@ slug: /how
 hide_table_of_contents: true
 ---
 
-# Turbowarp 是如何让 Scratch 作品加速 10-100 倍的
+# TurboWarp 是如何让 Scratch 作品加速 10-100 倍的
 
-TurboWarp 使用了 *编译器* 而 Scratch 使用了 *解释器*。这样允许 Turbowarp 因项目而异而加速项目 10-100 倍，但这样做会使得动态脚本编辑 [无法使用](#live-script-editing)。
+TurboWarp 使用了 *编译器* 而 Scratch 使用了 *解释器*。这样允许 TurboWarp 因项目而异而加速项目 10-100 倍，但这样做会使得动态脚本编辑 [无法使用](#live-script-editing)。
 
 export const Test = ({name, id, scratch, tw}) => (
   <tr>
@@ -20,7 +20,7 @@ export const Test = ({name, id, scratch, tw}) => (
     <tr>
       <th>测试</th>
       <th>Scratch</th>
-      <th>Turbowarp</th>
+      <th>TurboWarp</th>
     </tr>
   </thead>
   <tbody>
@@ -96,7 +96,7 @@ Scratch 的解释器将在运行时遍历一个 [抽象语法树](https://zh.wik
 
 解释器带来的额外性能消耗会加载 Javascript 带来的额外的消耗上面。由于代码使用了很多动态类型，JavaScript JIT 很难优化它。
 
-Turbowarp 的编译器通过将脚本直接编译为 JavaScript 函数，移除了上述所有额外性能消耗。比如，上述的脚本会被编译成：
+TurboWarp 的编译器通过将脚本直接编译为 JavaScript 函数，移除了上述所有额外性能消耗。比如，上述的脚本会被编译成：
 
 ```js
 const myVariable = stage.variables["`jEk@4|i[#Fk?(8x)AV.-my variable"];

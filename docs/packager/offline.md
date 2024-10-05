@@ -6,7 +6,7 @@ sidebar_label: 离线打包器
 
 # 离线打包器
 
-你可以离线使用 [Turbowarp 打包器](https://packager.turbowarp.org/)。这在某些情况下会很有用（比如，你的学校屏蔽了 Turbowarp）。
+你可以离线使用 [TurboWarp 打包器](https://packager.turbowarp.org/)。这在某些情况下会很有用（比如，你的学校屏蔽了 TurboWarp）。
 
 我们旨在一个月更新一次离线打包器。
 

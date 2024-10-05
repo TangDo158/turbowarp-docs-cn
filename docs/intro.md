@@ -20,4 +20,4 @@ hide_table_of_contents: true
 
 此文档是 [开源](https://github.com/TurboWarp/docs) 的。欢迎进行贡献。
 
-Turbowarp 中文版文档 是由社区志愿者进行翻译的，跟 Turbowarp 原仓库没有关系。
+TurboWarp 中文版文档 是由社区志愿者进行翻译的，跟 TurboWarp 原仓库没有关系。

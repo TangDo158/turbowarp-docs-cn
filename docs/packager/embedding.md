@@ -7,10 +7,10 @@ sidebar_label: 嵌入
 # 将打包后的作品嵌入到网站中
 
 :::info
-这篇文章是关于 [Turbowarp 打包器](https://turbowarp.org/) 的。如果你只是想把 Scratch 项目嵌入网站中，请转到 [另一个关于内嵌的页面](/embedding)。
+这篇文章是关于 [TurboWarp 打包器](https://turbowarp.org/) 的。如果你只是想把 Scratch 项目嵌入网站中，请转到 [另一个关于内嵌的页面](/embedding)。
 :::
 
-你可以将 Turbowarp 打包器的生成产物嵌入到另一个网站中：
+你可以将 TurboWarp 打包器的生成产物嵌入到另一个网站中：
 
 ```html
 <iframe src="项目的路径.html" width="480" height="360" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>

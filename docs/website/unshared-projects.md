@@ -5,7 +5,7 @@ hide_table_of_contents: true
 
 # 未分享的作品不再可见
 
-由于 Scratch API 变更，未分享的作品现在无法再在 Turbowarp、forkphorus 或者其它第三方网站上被打开。
+由于 Scratch API 变更，未分享的作品现在无法再在 TurboWarp、forkphorus 或者其它第三方网站上被打开。
 
 这个页面回答了大部分人们有的问题，并且列出了一些替代解决方案。请完整读完这篇文章再去跟别人谈论这些修改，以免误传。
 
@@ -15,17 +15,17 @@ hide_table_of_contents: true
 
 ## 发生了什么 {#what-happened}
 
-摆明了说：这些修改当然是 Scratch Team 改的。Turbowarp 只是一个和 Scratch Team 无关的第三方网站，我们啥都没做。
+摆明了说：这些修改当然是 Scratch Team 改的。TurboWarp 只是一个和 Scratch Team 无关的第三方网站，我们啥都没做。
 
-从 Scratch API 下载作品现在要求一个 “作品 token”，对于未分享的作品，只有它的作者可以访问。即使你在同一个浏览器中登录了 Scratch 账户，Turbowarp 也没有办法访问它。这些 token 都是临时的，不过几分钟就会过期，所以即使作者也不能通过提供一个永久 token 来让作品永远可见。
+从 Scratch API 下载作品现在要求一个 “作品 token”，对于未分享的作品，只有它的作者可以访问。即使你在同一个浏览器中登录了 Scratch 账户，TurboWarp 也没有办法访问它。这些 token 都是临时的，不过几分钟就会过期，所以即使作者也不能通过提供一个永久 token 来让作品永远可见。
 
-查看未分享的项目这种事情只是恰好可以用，并不是 Turbowarp 的主要用途。对于已分享的、从文件加载的和从桌面版打开的项目，编译器和插件总是可以用，并且以后也可以用。
+查看未分享的项目这种事情只是恰好可以用，并不是 TurboWarp 的主要用途。对于已分享的、从文件加载的和从桌面版打开的项目，编译器和插件总是可以用，并且以后也可以用。
 
 ## 替代解决方案 {#workarounds}
 
-**如果你想测试自己的项目：** 你可以用文件 > 保存到电脑来临时保存项目并在 Turbowarp 加载，完事了再用文件 > 从你的电脑加载将 Turbowarp 编辑完成的项目上传到 Scratch。另外，很多人可以主要用 Turbowarp 网页版或者[桌面版](https://desktop.turbowarp.org/)来完成自己的项目，然后等项目完成了再上传到 Scratch (这样做时请记得定期备份)。
+**如果你想测试自己的项目：** 你可以用文件 > 保存到电脑来临时保存项目并在 TurboWarp 加载，完事了再用文件 > 从你的电脑加载将 TurboWarp 编辑完成的项目上传到 Scratch。另外，很多人可以主要用 TurboWarp 网页版或者[桌面版](https://desktop.turbowarp.org/)来完成自己的项目，然后等项目完成了再上传到 Scratch (这样做时请记得定期备份)。
 
-**如果你想要合作完成项目：** 和他人分享作品最好的方法就是单纯地在 Scratch 网站上分享它。Scratch 社区很不错，并且这也是 Scratch 想让你做的事情。即使发布没有完成的项目也无所谓。Scratch 已经 15 年了，而 Turbowarp 刚出 2 年不到。在没有 Turbowarp 的 13 年间，合作项目即使没有 Turbowarp 也好好的，并且未来也是这样。
+**如果你想要合作完成项目：** 和他人分享作品最好的方法就是单纯地在 Scratch 网站上分享它。Scratch 社区很不错，并且这也是 Scratch 想让你做的事情。即使发布没有完成的项目也无所谓。Scratch 已经 15 年了，而 TurboWarp 刚出 2 年不到。在没有 TurboWarp 的 13 年间，合作项目即使没有 TurboWarp 也好好的，并且未来也是这样。
 
 **如果你想要嵌入作品到网站中：** 要将未分享的项目嵌入到其它网站中，要么你就分享项目，要么就用 文件 > 保存到电脑 来将文件下到电脑上，然后使用 [TurboWarp 打包器](https://packager.turbowarp.org/) 来将这个项目转换为一个独立文件从而使其 [可以被嵌入](/packager/embedding)。
 

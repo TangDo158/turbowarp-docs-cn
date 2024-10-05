@@ -24,7 +24,7 @@ docsURI 在积木列表的开头添加了一个按钮，允许打开一个页面
 
 ## disableMonitor
 
-Scratch 将会自动地在每个没有输入的返回值及目前添加一个复选框用于显示变量监视器。注意在 Turbowarp 中，这对布尔值积木也有效。若需要禁用此功能，请将积木的 disableMonitor 设置为 true。
+Scratch 将会自动地在每个没有输入的返回值及目前添加一个复选框用于显示变量监视器。注意在 TurboWarp 中，这对布尔值积木也有效。若需要禁用此功能，请将积木的 disableMonitor 设置为 true。
 
 请注意，即使设置了 disableMonitor，这个积木仍然能被别有用心的人用于监视器。
 

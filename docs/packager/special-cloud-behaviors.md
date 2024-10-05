@@ -6,7 +6,7 @@ hide_table_of_contents: true
 # 特殊云变量行为
 
 :::info
-此页面是关于 [Turbowarp 打包器](https://turbowarp.org/) 的。
+此页面是关于 [TurboWarp 打包器](https://turbowarp.org/) 的。
 :::
 
 默认禁用的 "特殊的云变量行为" 选项会修改一些特定命名的云变量的行为，来为你的项目解锁一些新功能。此功能来源于一个 [HTML 化工具中的相似功能](https://github.com/SheepTester/htmlifier/wiki/Special-cloud-behaviours)。此功能可以在 "云变量" 中启用。

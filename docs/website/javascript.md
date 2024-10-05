@@ -8,13 +8,13 @@ hide_table_of_contents: true
 ## 长话短说 {#short}
 
  * 如果你希望打包/HTML 化一个项目，请用 https://packager.turbowarp.org/ 。
- * 如果你希望将 Scratch 项目转换为人类可读且可编辑的 Javascript，请用 https://leopardjs.com/ 而不是 Turbowarp。
+ * 如果你希望将 Scratch 项目转换为人类可读且可编辑的 Javascript，请用 https://leopardjs.com/ 而不是 TurboWarp。
 
 ## 完整答案 {#long}
 
-Turbowarp 生成的代码并不是用于给人类阅读或编辑的。这么做会影响到你对 Javascript 的学习，因为它用了很多不常见的奇技淫巧来提高兼容性或者性能。
+TurboWarp 生成的代码并不是用于给人类阅读或编辑的。这么做会影响到你对 Javascript 的学习，因为它用了很多不常见的奇技淫巧来提高兼容性或者性能。
 
-举个例子，在正常的 Javascript 中访问列表的内容只需要用 `myList[myIndex]` 这样的简单语法，而 Turbowarp 用 `(b1.value[(b0.value | 0) - 1] ?? "")` 或者 `listGet(b0, b1.value)`，基于它可以假设入参为什么样的。`b0` 和 `b1` 是 Turbowarp 会使用的编译后的变量名称，而 `listGet` 是一个属于 Turbowarp 运行时的工具函数。生成的代码还没有被格式化过。更多相关的例子在 [另一个页面中](how)。
+举个例子，在正常的 Javascript 中访问列表的内容只需要用 `myList[myIndex]` 这样的简单语法，而 TurboWarp 用 `(b1.value[(b0.value | 0) - 1] ?? "")` 或者 `listGet(b0, b1.value)`，基于它可以假设入参为什么样的。`b0` 和 `b1` 是 TurboWarp 会使用的编译后的变量名称，而 `listGet` 是一个属于 TurboWarp 运行时的工具函数。生成的代码还没有被格式化过。更多相关的例子在 [另一个页面中](how)。
 
 如果你想要将 Scratch 项目转换为人类可读且可编辑的 Javascript，请用 https://leopardjs.com/ 。
 
