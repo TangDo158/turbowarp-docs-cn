@@ -3,17 +3,17 @@ slug: /packager/dynamic-stage-resize
 hide_table_of_contents: true
 ---
 
-# Dynamic stage resize
+# 动态地调整舞台的大小
 
 :::info
-This page is about the [TurboWarp Packager](https://turbowarp.org/).
+此页面是关于 [Turbowarp 打包器](https://turbowarp.org/) 的。
 :::
 
-Dynamic stage resize will change the size of the stage to match whatever aspect ratio and resolution it's being displayed at.
+动态舞台调整将改变舞台的大小，以匹配其显示的宽高比和分辨率。
 
-The stage isn't scaled; the [size](/custom-stage-size) actually changes. For example, if the user enables fullscreen on a 1920x1080 monitor, then the stage resizes to 1920x1080. If the user resizes the window to 1x1, it will also resize to that, so you should consider adding a minimum size check.
+舞台并不会被缩放；而 [舞台大小](/custom-stage-size) 会被改变。例如，如果用户在 1920x1080 的显示器上启用全屏模式，则舞台会调整为 1920x1080。如果用户将窗口调整为 1x1，它也会调整为该大小，因此你应该考虑添加最小大小检查。
 
-Almost no projects will handle this properly. To make your project compatible:
+几乎没有项目能够正确处理这个问题。为了使你的项目兼容：
 
- - First, make it compatible with [custom stage size](/custom-stage-size) at all (see that page for information)
- - Then, change your stage size detection logic to run every frame and make sure to always update the positions of items (yes this is inefficient and strange, but it's plenty fast and the best choice for now)
+- 首先，使其与 [自定义舞台大小](/custom-stage-size) 兼容（请参阅该页面以获取信息）
+- 然后，改变你的舞台大小检测逻辑，使其在每一帧都运行，并确保始终更新项目的位置（是的，这效率低且奇怪，但目前这是最快且最佳的选择）

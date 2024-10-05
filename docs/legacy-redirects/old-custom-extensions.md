@@ -2,7 +2,7 @@
 slug: /development/custom-extensions
 ---
 
-# Old URL, redirecting...
+# 重定向中...
 
 import {Redirect} from '@docusaurus/router';
 
@@ -12,4 +12,4 @@ import {Redirect} from '@docusaurus/router';
 
 <Redirect to="/development/extensions/introduction" />
 
-Please go to [the new page](/development/extensions/introduction)!
+如果浏览器没有反应，请点击 [这里](/development/extensions/introduction) 来转到新页面。

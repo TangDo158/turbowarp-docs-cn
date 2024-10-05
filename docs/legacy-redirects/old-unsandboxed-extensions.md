@@ -2,7 +2,7 @@
 slug: /development/unsandboxed-extensions
 ---
 
-# Old URL, redirecting...
+# 重定向中...
 
 import {Redirect} from '@docusaurus/router';
 
@@ -12,4 +12,4 @@ import {Redirect} from '@docusaurus/router';
 
 <Redirect to="/development/extensions/unsandboxed" />
 
-Please go to [the new page](/development/extensions/unsandboxed)!
+如果浏览器没有反应，请点击 [这里](/development/extensions/unsandboxed) 来转到新页面。
