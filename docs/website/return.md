@@ -11,7 +11,7 @@ Turbowarp 现在支持自定义返回值积木，允许让你把自制积木当�
 使用了此功能的项目无法被上传到 Scratch。
 :::
 
-自定义返回值积木理论上来说没有添加任何你之前做不到的功能 -- 它只是让这个功能变得 **更加** 易读且易用了而已。如果你的项目需要重复很多次文本，你可能可以写出这样的脚本：
+自定义返回值积木理论上来说没有添加任何你之前做不到的功能 —— 它只是让这个功能变得 **更加** 易读且易用了而已。如果你的项目需要重复很多次文本，你可能可以写出这样的脚本：
 
 <!-- sorry for the bitmaps, scratchblocks was broken when I made these https://github.com/scratchblocks/scratchblocks/issues/486 -->
 

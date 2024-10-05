@@ -9,9 +9,9 @@ hide_table_of_contents: true
 
 ## 作为翻译者的要求 {#requirements}
 
- - 你的英语应当十分 **流利**。
+ - 你的英语应当十分**流利**。
  - 举个例子，如果你能在英语下流畅使用 Turbowarp 或者看得懂 griffpatch 的视频，那你就有一门流利的英语。反之如果你不用翻译器就理解困难，那你的英语就不流利。
- - 你想要翻译的语言必须是你的 **母语**。
+ - 你想要翻译的语言必须是你的**母语**。
  - 你必须有一个 email 地址，并且你每周最少看一次邮箱。
  - 你必须有一个 [scratch.mit.edu](https://scratch.mit.edu/) 账户。
 
@@ -66,12 +66,12 @@ hide_table_of_contents: true
 :::
 
 :::warning
-如果你的请求被拒绝了，你也会收到一封电子邮件。如果你认为这是一个误会，请发送电子邮件到 contact@turbowarp.org 包含你的 Transifex 账户名。你也可以参照“帮助和联系”一节来获得更多联系方式。
+如果你的请求被拒绝了，你也会收到一封电子邮件。如果你认为这是一个误会，请发送电子邮件到 contact@turbowarp.org，邮件内容包含你的 Transifex 账户名。你也可以参照“帮助和联系”一节来获得更多联系方式。
 :::
 
 ## 帮助和联系
 
-如果你遇到了关于翻译的问题，你可以选择以下之一的选项：
+如果你遇到了关于翻译的问题，你可以选择以下之一的方式来解决：
 
  - 发送电子邮件到 contact@turbowarp.org。
  - [在 GitHub 上开始一个讨论](https://github.com/TurboWarp/scratch-gui/discussions) (需要 GitHub 账户)。
