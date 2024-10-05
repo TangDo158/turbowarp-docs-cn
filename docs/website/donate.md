@@ -5,8 +5,8 @@ hide_table_of_contents: true
 
 # 捐赠
 
-The TurboWarp project now accepts donations on GitHub https://github.com/sponsors/GarboMuffin and other places https://muffin.ink/donate
+TurboWarp 项目现在正在 GitHub：https://github.com/sponsors/GarboMuffin  以及其他地方接受捐赠：https://muffin.ink/donate
 
-You should also donate to Scratch: https://scratch.mit.edu/donate
+您还应该同时也给 Scratch 项目捐款: https://scratch.mit.edu/donate
 
-Thank you! ❤️
+由衷的感谢您! ❤️
