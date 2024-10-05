@@ -5,74 +5,74 @@ hide_table_of_contents: true
 
 # 嵌入
 
-TurboWarp can be embedded with a standard iframe:
+Turbowarp 可以被嵌入到一个标准的 iframe 中：
 
 ```html
 <iframe src="https://turbowarp.org/414716080/embed" width="482" height="412" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
 ```
 
-Replace `414716080` with the ID of your project. You can change the width and height of the iframe and the player will automatically resize to fit (482x412 will result in the stage rendering at an undistorted 480x360).
+用你项目的 ID 替换 `414716080`。你可以修改 iframe 的宽度和高度，播放器会自动重新设置大小来填满 iframe。(482x412 通常会导致舞台运行在标准的 480x360 分辨率下)。
 
-TurboWarp's embeds will have a transparent background if the iframe is allowed to be transparent. TurboWarp's embeds will have a fullscreen button if the iframe is allowed to become fullscreen. The example code above enables both of these feature.
+Turbowarp 的嵌入元素有一个透明的背景，如果 iframe 允许为透明。Turbowarp 的嵌入元素还可以有一个全屏按钮如果 iframe 允许全屏。上述示例代码会打开刚才说的两个功能。
 
 ## 未共享的项目无法被嵌入 {#unshared-projects}
 
-Unshared projects [can not be shown in embeds](unshared-projects). Make sure the projects you embed are shared or use the [TurboWarp Packager](https://packager.turbowarp.org/) instead.
+未共享的项目 [无法在嵌入元素中显示](unshared-projects)。请确保你嵌入的项目已被分享，或使用 [TurboWarp 打包器](https://packager.turbowarp.org/)。
 
 ## URL 参数 {#url-parameters}
 
-All [standard URL Parameters](url-parameters.md) are still available. You can use these to control usernames and other things.
+所有 [标准 URL 参数](url-parameters.md) 仍然可用，你可以用它们来控制用户名或者别的什么东西。
 
-There are also some special parameters only available in embeds:
+这里还有一些只在嵌入元素中可用的特殊的参数：
 
 ### 自动播放 {#autoplay}
 
-Embeds support the `autoplay` parameter, which will automatically hit the green flag when the project loads. For example: https://turbowarp.org/15832807/embed?autoplay
+嵌入元素支持 `autoplay` 参数，支持当作品加载完成时自动启动绿旗。举个例子：https://turbowarp.org/15832807/embed?autoplay
 
-Note that sound blocks may not work until the user interacts with the project (for example, by clicking). This is a restriction imposed by browsers. There is nothing TurboWarp can do to work around this.
+注意在用户与项目交互 (比如点击) 前声音积木没有效果。这是一个由浏览器施加的限制，Turbowarp 无法提供任何替代方案。
 
 ### 设置按钮 {#settings-button}
 
-You can optionally enable a settings button in embeds with the `settings-button` parameter that opens a similar menu to the "Advanced settings" menu found in the website and editor. For example: https://turbowarp.org/15832807/embed?autoplay&settings-button
+你还可以可选地在嵌入元素中使用 `settings-button` 参数启用一个设置按钮，允许用户打开一个和在网站和编辑器中的 “高级设置” 相差无几的选项菜单。举个例子： https://turbowarp.org/15832807/embed?autoplay&settings-button
 
 ### 全屏背景颜色 {#fullscreen-background}
 
-Outside of fullscreen mode, the embed is transparent so you can style the parent element if you want to change the background color.
+全屏模式不启用时，嵌入元素的背景是透明的，所以你可以通过修改父元素的样式来修改背景颜色。
 
-In fullscreen mode, the embed will either use a white or an almost black color depending on whether the user's computer is configured to dark mode or not.
+全屏模式时，嵌入元素将根据用户是否启用深色模式来使用白色或一个几乎纯黑的颜色。
 
-To override this behavior, set the `fullscreen-background` parameter to a CSS color value like `black` or `rgb(50,90,100)`. For example: https://turbowarp.org/15832807/embed?fullscreen-background=yellow
+若要覆盖这个行为，请设置 `fullscreen-background` 参数为一个 CSS 颜色值，比如 `black` 或者 `rgb(50,90,100)`。举个例子： https://turbowarp.org/15832807/embed?fullscreen-background=yellow
 
-You can also use hex colors if you escape the `#` with percent encoding: `%23abc123`.
+如果你对 `#` 进行 HTML 转义你，还可以使用十六进制颜色，比如 `%23abc123`。
 
 ### 插件 {#addons}
 
-By default, embeds have no addons enabled. This can be overridden with the `addons` parameter, which is a comma separated list of addon IDs to enable. For example: https://turbowarp.org/15832807/embed?addons=pause,gamepad,mute-project
+一般来讲，嵌入元素没有插件启用。这可以使用 `addons` 参数覆盖，它是一个用英文逗号分割的，要启用的插件的ID的列表。举个例子：https://turbowarp.org/15832807/embed?addons=pause,gamepad,mute-project
 
-Useful addons and their IDs:
+一些有用的插件和他们的 ID：
 
- - "Pause button" is `pause`
- - "Muted project player mode" is `mute-project`
- - "Remove curved stage border" is `remove-curved-stage-border`
- - "File drag and drop" is `drag-drop`
- - "Gamepad support" is `gamepad`
- - "Reverse order of project controls" is `editor-buttons-reverse-order`
- - "Clone counter" is `clones`
+ - "暂停按钮" 的 ID 是 `pause`
+ - "静音项目" 的 ID 是 `mute-project`
+ - "移除弯曲的舞台边框" 的 ID 是 `remove-curved-stage-border`
+ - "文件拖放" 的 ID 是 `drag-drop`
+ - "游戏手柄支持" 的 ID 是 `gamepad`
+ - "项目控件反向顺序" 的 ID 是 `editor-buttons-reverse-order`
+ - "克隆体计数器" 的 ID 是 `clones`
 
-Other addons will have no effect on the embed.
+其它插件对于嵌入元素没有效果。
 
 ## 安全考虑 {#security}
 
-If you use user-supplied information to generate embed links, you should sanitize any arguments to make sure users can't supply arbitrary URL parameters as some can lead to unexpected behaviors.
+如果你使用用户提供的信息生成嵌入链接，你应该对任何参数进行清理，以确保用户无法提供任意的 URL 参数，因为某些参数可能会导致意外行为。
 
 ## 需要更多可配置性? {#packager}
 
-Use the [TurboWarp Packager](https://packager.turbowarp.org/) for more control over the loading screen, accent colors, controls, and more. You can also [embed the output of the packager](/packager/embedding) very easily.
+请用 [TurboWarp 打包器](https://packager.turbowarp.org/) 来更好地控制加载屏幕、强调颜色、控制方式等更多设置。你还可以轻易地 [嵌入打包器的生成产物](/packager/embedding)。
 
 ## 捐赠 {#donations}
 
-If you use a TurboWarp embed in a commercial website, it is in your best interest to [donate to us and the projects we rely upon](/donate) to ensure the embed continues to function smoothly. ❤️
+如果你在一个商业网站中使用了 Turbowarp 嵌入元素，那你或许可以 [给我们和我们依赖的项目捐献](/donate) 来让我们的嵌入元素能顺利运行。 ❤️
 
 ## 开源协议 {#license}
 
-TurboWarp is licensed under the [GPLv3.0](https://github.com/TurboWarp/scratch-gui/blob/develop/LICENSE). We believe that an `<iframe>` of a GPLv3.0 work doesn't create a derivative work under the GPLv3.0, rather it creates an "aggregate work" which is not subject to the same requirements as derivative works. However, we are not lawyers and this is not legal advice. Talk to a lawyer if this matters to you.
+Turbowarp 以 [GPLv3.0](https://github.com/TurboWarp/scratch-gui/blob/develop/LICENSE) 开源协议分发。我们认为，GPLv3.0 作品的 `<iframe>` 不会在 GPLv3.0 下创建衍生作品，而是创建了一个“汇总作品”，该作品不受衍生作品相同要求的约束。然而，我们不是律师，这不是法律建议。如果这对你很重要，请咨询律师。

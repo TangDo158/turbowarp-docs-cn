@@ -1,7 +1,7 @@
 ---
 slug: /packager/embedding
 hide_table_of_contents: true
-sidebar_label: Embedding
+sidebar_label: 嵌入
 ---
 
 # 将打包后的作品嵌入到网站中

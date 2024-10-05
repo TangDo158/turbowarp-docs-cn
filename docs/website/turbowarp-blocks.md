@@ -18,7 +18,7 @@ Turbowarp 有一些积木，允许你使用一些在 Scratch 中无法使用的�
 这些积木和 Scratch “兼容”，因为它们就是修改了一下的参数积木而已。
 
 :::warning
-从这个积木开始的所有积木都**不兼容** Scratch。使用了它们的积木无法与 Scratch 兼容。使用它们的项目无法被上传到 Scratch 网站。如果你不使用任何仅限 Turbowarp 的积木，那么将编辑完成的作品上传到 Scratch 应当没有问题。
+从这个积木以后的所有积木都**不兼容** Scratch。使用了它们的积木无法与 Scratch 兼容。使用它们的项目无法被上传到 Scratch 网站。如果你不使用任何仅限 Turbowarp 的积木，那么将编辑完成的作品上传到 Scratch 应当没有问题。
 :::
 
 ## 最后一个按下的按键 {#last-key-pressed}

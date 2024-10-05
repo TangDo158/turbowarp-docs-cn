@@ -5,60 +5,60 @@ hide_table_of_contents: true
 
 # 自定义返回值积木
 
-TurboWarp now supports custom reporters which lets you use any custom block in your project as a reporter, like the addition block built into Scratch. This is a pretty standard feature in text-based programming languages, but it can be hard to understand initially.
+Turbowarp 现在支持自定义返回值积木，允许让你把自制积木当返回值积木用，就像添加到 Scratch 的额外积木一样。在基于文本的编程语言中这是一个非常标准的特性，但它对于编程初学者比较难以理解。
 
 :::info
-Projects that use this feature cannot be uploaded to the Scratch website.
+使用了此功能的项目无法被上传到 Scratch。
 :::
 
-Custom reporters technically don't let you do anything you couldn't do before -- they just make it *much* easier to read and write. For example, if your project needs to repeat text a lot, you might make a script like this:
+自定义返回值积木理论上来说没有添加任何你之前做不到的功能 -- 它只是让这个功能变得 **更加** 易读且易用了而已。如果你的项目需要重复很多次文本，你可能可以写出这样的脚本：
 
 <!-- sorry for the bitmaps, scratchblocks was broken when I made these https://github.com/scratchblocks/scratchblocks/issues/486 -->
 
 <img src={require('./assets/repeat-old.png').default} style={{height: '429px'}} />
 
-This works, but it's pretty ugly, and will only get worse as you use the block more. Using the return block to create a custom reporter, this becomes much simpler:
+能用就行，但它很丑，并且会随着你的使用而变得越来越丑。如果使用返回积木来创建一个自定义返回值积木，事情可以变得更简单：
 
 <img src={require('./assets/repeat-return.png').default} style={{height: '410px'}} />
 
 ## 如何使用 {#usage}
 
-Open the extension library by clicking the button in the bottom left of the editor (same place where you find things like "pen"), then enable "Custom Reporters":
+打开扩展库，然后点击编辑器的左下角 (和你找类似于 **画笔** 之类的东西的地方一样)，然后打开 “自定义返回值”：
 
 ![](./assets/return-library.png)
 
-Then, create a custom block as you normally would. To make a custom reporter, just drag a "return" block into the script -- it'll be located at the bottom of the custom block list. You don't have to check any boxes or toggle anything.
+然后，和你平常一样创建一个自定义积木。要创建一个自定义返回值积木，只需要将“返回”拖到脚本里 —— 它在自制积木的尾部。你不用勾选任何复选框或者切换任何东西。
 
-Once a return block is hit, it functions similarly to "stop this script".
+当返回积木被运行时，它的行为很像“停止这个脚本”。
 
-TurboWarp automatically reshapes blocks to what it guesses is the correct shape, but sometimes it guesses wrong. You can always change a block's shape by right clicking on it and then choosing "Changed To Stacked Block" or "Change To Reporter".
+Turbowarp 会自动重设积木的形状到它猜测的正确形状，但有时候它会猜错。你总是可以通过右键积木然后点击 "切换到命令积木" 或者 "切换到返回值积木" 来手动切换一个积木的类型。
 
-Similarly, if all the return blocks in a custom block contain a boolean (true/false) value such as "1 > 2", then the custom block will also be boolean-shaped. This is just a visual helper as any custom reporter can be dropped into any input.
+相似地，如果自制积木中所有的返回积木都返回布尔值 (true/false)，比如 "1 > 2"，那么自制积木也会变为布尔值形状。这只是一个让显示更舒服的工具，考虑到任何自定义积木都可以拖进任意输入中。
 
 ## 递归 {#recursion}
 
-Recursion is also supported. This can be especially hard to grasp, but basically, blocks can run themselves. If you can take a large problem and continuously break it down into smaller problems until you reach a known "base case", many algorithms can be written very elegantly.
+我们也支持递归。可能很难说清这一点，但总之，积木可以运行它们自己。如果你能使用 “分而治之” 思想来构造算法，很多逻辑可以变得无比优雅。
 
-Using recursion, you can rewrite the repeat block to use no variables at all:
+通过使用递归，你可以将重复积木写成不使用变量的形式：
 
 <img src={require('./assets/repeat-recursion.png').default} style={{height: '291px'}} />
 
-Just like custom reporters themselves, recursion doesn't let you do anything that wasn't technically possible already, but it can make it much easier to understand. (Anything written with loops can be rewritten with recursion. Anything written with recursion can be rewritten with loops. Sometimes one solution is easier than the other.)
+和自定义返回值积木一样，递归并不会让你做任何本来不可能实现的事情。但它能让这件事情更易读 (任何循环都可以用递归重写。任何递归都可以用循环重写，即递推。有时某种解决方案比另一种更简单)。
 
 :::info
-When using the compiler, beware of [stack overflow errors](https://en.wikipedia.org/wiki/Stack_overflow) from too much recursion. Recursing more than a few thousand calls deep typically will throw errors.
+当使用编译器时请小心因过多递归导致的 [堆栈溢出错误](https://zh.wikipedia.org/wiki/%E5%A0%86%E7%96%8A%E6%BA%A2%E4%BD%8D)。多于几千层的递归会引发异常。
 :::
 
 ## 编译器和解释器之间的行为差异 {#interpreter-compiler}
 
-The interpreter supports infinite recursion whereas the compiler is limited by the JavaScript stack size, which is typically about a few thousand calls deep but varies between systems and browsers.
+解释器支持无限递归，而编译器受 JavaScript 栈大小限制。限制大概是数千层，取决于系统和浏览器的种类。
 
 :::info
-It is recommended to ensure that custom reporters only run some algorithm and output a final answer. To ensure your project runs the same in the compiler and interpreter, custom reporters should avoid things like moving sprites, saying text, waiting, etc.
+推荐返回值积木只进行一些算法然后给出一个正确答案 (无副作用)。要保证你的项目在编译器和解释器中行为一致，返回值积木不应移动角色、显示文本、等待、或者进行其它可能引发副作用的行为。
 :::
 
-To improve performance, the compiler has a feature known as [short circuiting](https://en.wikipedia.org/wiki/Short-circuit_evaluation). Imagine a Scratch block like "&lt; (1 = 2) and (3 = 3) &gt;". When the compiler sees this block, it first evaluates "1 = 2", which is clearly false. In this case, the compiler doesn't even need to check the other side of the "and" block as it won't matter: the final result will always be false. Typically this is just free performance, but if your blocks have side effects such as moving sprites, different behaviors will occur as the interpreter always evaluates all blocks. Try this script to see:
+为了提高性能，编译器有一个名为 [短路求值](https://zh.wikipedia.org/wiki/%E7%9F%AD%E8%B7%AF%E6%B1%82%E5%80%BC) 的功能。 想象一个类似于 "&lt; (1 = 2) 且 (3 = 3) &gt;" 的积木。 当编译器注意到这个积木时，它首先评估 "1 = 2"，这显然不成立。这种情况下，编译器都不需要再去评估另一侧的表达式了，因为评估了也没有意义：最终的结果一定是“假”。一般来讲这样相当于免费的额外性能，但如果你的积木含有类似于移动角色的副作用，不同的行为将会发生，因为解释器总是评估所有的积木。试试这个脚本你就知道了：
 
 <img src={require('./assets/short-circuit.png').default} style={{height: '375px'}} />
 
-If you have several custom reporters nested deeply inside other blocks, the order they run in can differ between the compiler and interpreter.
+如果你有几个自定义返回值积木到多次嵌套在其它积木中，它们运行的顺序就可以拿来区分编译器和解释器。
