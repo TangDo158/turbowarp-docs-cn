@@ -47,7 +47,7 @@ hide_table_of_contents: true
 
 新的下载项目的过程是先从 `https://api.scratch.mit.edu/projects/ID` 获取 "project_token" 字段，然后用这个字段去生成 URL `https://projects.scratch.mit.edu/ID?token=TOKEN`。
 
-如果你正使用 JavaScript，这里有一段代码可以让你起步，这段代码可以在浏览器中运行。如果你的代码是运行在服务端 (比如 Node.js) 的，那么你应将 `https://trampoline.turbowarp.org/api/projects/` 替换为 `https://api.scratch.mit.edu/projects/`。因为服务器不需要担心 [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing) 问题。我们不保证 trampoline.turbowarp.org 会不会炸掉或者掉线；使用者后果自负。你可能还会对用于完整项目下载器的 [sb-downloader](https://github.com/forkphorus/sb-downloader) (包括简易 API) 感兴趣。
+如果你正使用 JavaScript，这里有一段代码可以让你起步，这段代码可以在浏览器中运行。如果你的代码是运行在服务端 (比如 Node.js) 的，那么你应将 `https://trampoline.turbowarp.org/api/projects/` 替换为 `https://api.scratch.mit.edu/projects/`。因为服务器不需要担心 [CORS](https://zh.wikipedia.org/wiki/%E8%B7%A8%E4%BE%86%E6%BA%90%E8%B3%87%E6%BA%90%E5%85%B1%E4%BA%AB) 问题。我们不保证 trampoline.turbowarp.org 会不会炸掉或者掉线；使用者后果自负。你可能还会对用于完整项目下载器的 [sb-downloader](https://github.com/forkphorus/sb-downloader) (包括简易 API) 感兴趣。
 
 ```js
 const getProjectMetadata = async (projectId) => {
