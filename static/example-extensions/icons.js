@@ -13,7 +13,7 @@ class IconsExample {
       id: 'iconsexample',
       name: '图标示例',
       // highlight-start
-      menuIconURI: blocksIcon, // 菜单图标 URI
+      menuIconURI: blocksIcon, // 积木区分类图标 URI
       blockIconURI: dangoIcon, // 积木图标 URI
       // highlight-end
       blocks: [

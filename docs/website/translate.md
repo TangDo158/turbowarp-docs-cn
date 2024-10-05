@@ -7,7 +7,7 @@ hide_table_of_contents: true
 
 We're looking for people to help translate TurboWarp into languages other than English. If that interests you, read on.
 
-## Requirements to join as a translator {#requirements}
+## 作为翻译者的要求 {#requirements}
 
  - You must be **FLUENT IN THE ENGLISH LANGUAGE**.
  - For example, you’re fluent if you can use TurboWarp in English, or if you understand griffpatch’s videos. If you struggle to understand sentences without a translator, you’re not fluent.
@@ -19,9 +19,9 @@ If you’re not a native speaker but consider yourself fluent enough, you may al
 
 We only support languages that Scratch itself supports. Support for RTL languages such as Arabic and Hebrew is currently a work-in-progress. They should mostly work in the editor, but places like the desktop app and packager require additional changes. Efforts to improve this will be prioritized when some more translations are written.
 
-## Steps to join as a translator {#request-to-join}
+## 加入翻译者的方法 {#request-to-join}
 
-### 1. Verify your Scratch account
+### 1. 验证你的 Scratch 账户
 
 1. Visit [this Scratch studio](https://scratch.mit.edu/studios/33665222/comments) with your Scratch account.
 2. Send a studio comment indicating the language you want to translate to (for example, `Greek`).  
@@ -29,7 +29,7 @@ We only support languages that Scratch itself supports. Support for RTL language
 
 If you don’t own a Scratch account, please send an email to contact@turbowarp.org instead.
 
-### 2. Create a Transifex account
+### 2. 创建 Transifex 账户
 
 1. Go to [Transifex open-source Sign up](https://app.transifex.com/signup/open-source/?join_org=turbowarp&join_project=turbowarp).  
 1. You will be shown Transifex's "Sign up" screen. **DO NOT sign up with Google.**  
@@ -47,7 +47,7 @@ For example, if your Scratch username is `john_walker954`, your Transifex userna
 
 If you already own a Transifex account and don’t want to create a new one, please send an email to translation@turbowarp.org indicating your Transifex account’s username. Then, continue with the "requesting a language" section below.
 
-### 3. Requesting a language
+### 3. 请求一个语言
 
 1. Make sure you’re logged in to Transifex. If you just signed up, you are already logged in.
 2. Go to [TurboWarp's Transifex page](https://app.transifex.com/join/?o=turbowarp&p=turbowarp&t=opensource).
@@ -65,7 +65,7 @@ If your request is accepted, you’ll receive an email from Transifex. We usuall
 If your request is denied, you’ll receive an email. If you believe this was a mistake, please send an email to contact@turbowarp.org indicating your Transifex username. See below for other contact methods. 
 :::
 
-## Help or contact
+## 帮助和联系
 
 If you have any questions about translating, you may choose one of the following options:
 

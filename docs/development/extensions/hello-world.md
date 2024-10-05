@@ -24,7 +24,7 @@ After a second, an extension named "It works!" should appear in the sidebar. If 
 
 Now, we will dissect what is going on in this file in the order it runs.
 
-## Constructing and registering
+## 构造和注册扩展类
 
 ```js
 class MyExtension {
@@ -87,7 +87,7 @@ These are the acceptable values for blockType:
 
 While other BlockTypes do exist, they do not work well and will not be discussed at this time.
 
-## The blocks
+## 积木的实现
 
 ```js
   hello() {
@@ -101,12 +101,12 @@ When you want to change the extension, simply modify the extension and reload th
 
 If you observe that your changes aren't being applied when you refresh, try your browser's "hard refresh" or "refresh without cache" shortcuts.
 
-## Exercises
+## 课后练习
 
 1. Change the "Hello!" block to return your favorite number instead. Remember to rename the block accordingly.
 1. Change the block's opcode.
 1. Add another block. Make this block use a `type` of `Scratch.BlockType.BOOLEAN` and return a boolean (true or false) at random.
 
-## Next steps
+## 下一步
 
 Next, let's [allow our blocks to take in arguments](./inputs).

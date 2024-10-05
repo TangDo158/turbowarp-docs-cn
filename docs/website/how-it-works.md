@@ -165,6 +165,6 @@ return function fun1_sort () {
 };
 ```
 
-### Live script editing {#live-script-editing}
+### 动态脚本编辑 {#live-script-editing}
 
 If you start a script using the compiler, you won't be able to move, remove, or add blocks and have the changes be reflected in real time as they would be in Scratch. The script has to be restarted for changes to apply. We believe there are some ways we could make this work, but they will hurt performance or add significant complexity. It's something we want to implement eventually, but not yet.

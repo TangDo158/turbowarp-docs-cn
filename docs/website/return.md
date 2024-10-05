@@ -21,7 +21,7 @@ This works, but it's pretty ugly, and will only get worse as you use the block m
 
 <img src={require('./assets/repeat-return.png').default} style={{height: '410px'}} />
 
-## How to use {#usage}
+## 如何使用 {#usage}
 
 Open the extension library by clicking the button in the bottom left of the editor (same place where you find things like "pen"), then enable "Custom Reporters":
 
@@ -35,7 +35,7 @@ TurboWarp automatically reshapes blocks to what it guesses is the correct shape,
 
 Similarly, if all the return blocks in a custom block contain a boolean (true/false) value such as "1 > 2", then the custom block will also be boolean-shaped. This is just a visual helper as any custom reporter can be dropped into any input.
 
-## Recursion {#recursion}
+## 递归 {#recursion}
 
 Recursion is also supported. This can be especially hard to grasp, but basically, blocks can run themselves. If you can take a large problem and continuously break it down into smaller problems until you reach a known "base case", many algorithms can be written very elegantly.
 
@@ -49,7 +49,7 @@ Just like custom reporters themselves, recursion doesn't let you do anything tha
 When using the compiler, beware of [stack overflow errors](https://en.wikipedia.org/wiki/Stack_overflow) from too much recursion. Recursing more than a few thousand calls deep typically will throw errors.
 :::
 
-## Differences between compiler and interpreter {#interpreter-compiler}
+## 编译器和解释器之间的行为差异 {#interpreter-compiler}
 
 The interpreter supports infinite recursion whereas the compiler is limited by the JavaScript stack size, which is typically about a few thousand calls deep but varies between systems and browsers.
 

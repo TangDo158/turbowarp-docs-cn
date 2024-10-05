@@ -5,17 +5,21 @@ hide_table_of_contents: true
 
 # 补帧
 
-Interpolation makes motion animations in projects appear smoother by interpolating movement of sprites between frames. It's basically higher framerate without affecting how fast scripts run.
+补帧通过在两帧间进行线性插帧来让项目中的移动动画变得更加流畅。基本上就是提高帧数而不影响脚本运行速度。
 
-Interpolation should not be used on:
+:::note
+译者注：似乎补帧并没有提高帧数，而只是在每一帧渲染两次，这样的说法可能是错误的。
+:::
 
- - 3D projects
- - Raytracers
- - Pen projects
- - Laggy projects
+补帧不应用于：
 
-Interpolation is unlikely to make these projects look smoother because interpolation can't interpolate pen, but it will hurt performance.
+ - 3D 项目
+ - 光线追踪项目
+ - 画笔项目
+ - 延迟很大的项目
 
-Interpolation can introduce slight (up to 1/30th of a second) input latency.
+补帧可能无法让这些项目看起来更流畅，因为补帧无法为画笔进行插帧，而它还对性能有负面影响。
 
-You may see some graphical glitches on complex projects such as scrolling platformers.
+补帧可能会导致略微的 (最高 1/30 秒) 的输入延迟。
+
+你可能会在诸如卷轴跑酷等复杂作品中看到渲染错误。

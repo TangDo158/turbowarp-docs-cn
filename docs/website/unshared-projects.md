@@ -13,7 +13,7 @@ This page answers most of the questions people have and lists some workarounds. 
 ANY website other than scratch.mit.edu that asks for your Scratch password is a SCAM, even if it supposedly lets you share your unshared projects with other users. You WILL have your account stolen and projects deleted. There are NO EXCEPTIONS to this rule.
 :::
 
-## What happened {#what-happened}
+## 发生了什么 {#what-happened}
 
 We want to be clear: These changes were made by the Scratch Team. TurboWarp is a third-party website that is not affiliated with the Scratch Team; we did not make these changes.
 
@@ -21,7 +21,7 @@ Downloading a project from the Scratch API now requires a "project token" that, 
 
 Unshared projects were always something that just happened to work and weren't the intended main use of TurboWarp. Things like the compiler and addons have always been the focus and will continue to work for shared projects, projects loaded from files, and the desktop app.
 
-## Workarounds {#workarounds}
+## 替代解决方案 {#workarounds}
 
 **For testing your own projects:** You can use the File > Save to your computer and File > Load from your computer menus in the Scratch editor to load your unshared Scratch projects in TurboWarp or upload projects made in TurboWarp to Scratch. Alternatively, many people have had success working on their projects primarily in TurboWarp either using the website or [desktop app](https://desktop.turbowarp.org/) and uploading their projects to Scratch when they're complete (please remember to make routine backups when doing this).
 
@@ -29,7 +29,7 @@ Unshared projects were always something that just happened to work and weren't t
 
 **For embedding in other websites:** To embed unshared projects in other websites, either Share the project on Scratch or download the project to your computer with the File > Save to your computer menu in the Scratch editor, and use the [TurboWarp Packager](https://packager.turbowarp.org/) to convert this project to a standalone file that [can be embedded](/packager/embedding).
 
-## This is a good thing {#good-thing}
+## 这是好事还是坏事？ {#good-thing}
 
 Securing unshared projects is a decade overdue.
 
@@ -41,7 +41,7 @@ We've always had the stance that if people want unshared projects to actually be
 
 <!-- It's impressive that Scratch wasn't sued into the ground for the countless privacy violations this has surely caused -->
 
-## For developers {#developers}
+## 对于开发者 {#developers}
 
 This section is for people developing third-party Scratch-related tools.
 

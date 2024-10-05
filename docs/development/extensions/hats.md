@@ -8,7 +8,7 @@ import {ExtensionCode, Spoiler} from './utils.js';
 
 Event blocks and hat blocks are two types of blocks that allow you to control when a script runs. Even though they look similar, they are different.
 
-## Event blocks
+## 事件积木
 
 Event blocks are for running scripts in response to an external event. An example of this is "when flag clicked" - the event is when the user clicks on the flag button. "when this sprite clicked" similarly is run in response to a click event, though Scratch does a bit more work to figure out which sprite the event happened on. Event blocks can be used for any external event that lets you run a callback.
 
@@ -69,7 +69,7 @@ In this example, we've modified the previous extension to only run the block if 
 
 To filter by only sprite and not fields, you can set the second argument to null or an empty object (`{}`).
 
-## Restarting existing threads
+## 重启已经存在的线程
 
 Consider this script:
 
@@ -115,7 +115,7 @@ The important difference is that `when` actually has code. After you do startHat
 
 One tricky thing here is that Scratch won't automatically start predicate-based hat blocks -- you need to do so yourself. In this example we use the `BEFORE_EXECUTE` event (It runs, as the name implies, before any scripts get run, so anything you start here will be run during that frame). As with event blocks, you can run your predicate-based hat blocks from anywhere that you get a callback.
 
-## Edge-activated hat blocks
+## 边缘触发的帽型积木
 
 Predicate-based hats let you run a script when a condition *is* true. Edge-activated hat blocks let you run a script when a condition *becomes* true.
 
@@ -185,13 +185,13 @@ The moment the extension's timer reached 3 seconds, the block returned true, and
 
 Similar to predicate-based hats, edge-activated hats can accept arbitrary inputs and return a Promise if necessary.
 
-## Exercises
+## 课后练习
 
 1. Create an event-based block that runs once every second, another one every 5th second, and another every 10th second.
 1. Combine each of those event blocks into one block with a menu.
 1. Create a command block with a text input that will run a normal Scratch broadcast. The built-in "when I receive" block has the full opcode `event_whenbroadcastreceived` and its single argument is called `BROADCAST_OPTION` which is the name of the broadcast.
 1. Modify the previous exercise's broadcast block to be a reporter that returns a comma-separated list containing the name of each sprite that a new thread was started in. (Hint: <Spoiler>Each thread object contains a .target property, and each target object has a .getName() method.</Spoiler>)
 
-## Next steps
+## 下一步
 
 We've covered a lot of APIs, but [how do we make sure that the changes we make won't break projects?](./compatibility)

@@ -15,27 +15,27 @@ Replace `414716080` with the ID of your project. You can change the width and he
 
 TurboWarp's embeds will have a transparent background if the iframe is allowed to be transparent. TurboWarp's embeds will have a fullscreen button if the iframe is allowed to become fullscreen. The example code above enables both of these feature.
 
-## Unshared projects can't be embedded {#unshared-projects}
+## 未共享的项目无法被嵌入 {#unshared-projects}
 
 Unshared projects [can not be shown in embeds](unshared-projects). Make sure the projects you embed are shared or use the [TurboWarp Packager](https://packager.turbowarp.org/) instead.
 
-## URL parameters {#url-parameters}
+## URL 参数 {#url-parameters}
 
 All [standard URL Parameters](url-parameters.md) are still available. You can use these to control usernames and other things.
 
 There are also some special parameters only available in embeds:
 
-### Autoplay {#autoplay}
+### 自动播放 {#autoplay}
 
 Embeds support the `autoplay` parameter, which will automatically hit the green flag when the project loads. For example: https://turbowarp.org/15832807/embed?autoplay
 
 Note that sound blocks may not work until the user interacts with the project (for example, by clicking). This is a restriction imposed by browsers. There is nothing TurboWarp can do to work around this.
 
-### Settings button {#settings-button}
+### 设置按钮 {#settings-button}
 
 You can optionally enable a settings button in embeds with the `settings-button` parameter that opens a similar menu to the "Advanced settings" menu found in the website and editor. For example: https://turbowarp.org/15832807/embed?autoplay&settings-button
 
-### Fullscreen background color {#fullscreen-background}
+### 全屏背景颜色 {#fullscreen-background}
 
 Outside of fullscreen mode, the embed is transparent so you can style the parent element if you want to change the background color.
 
@@ -45,7 +45,7 @@ To override this behavior, set the `fullscreen-background` parameter to a CSS co
 
 You can also use hex colors if you escape the `#` with percent encoding: `%23abc123`.
 
-### Addons {#addons}
+### 插件 {#addons}
 
 By default, embeds have no addons enabled. This can be overridden with the `addons` parameter, which is a comma separated list of addon IDs to enable. For example: https://turbowarp.org/15832807/embed?addons=pause,gamepad,mute-project
 
@@ -61,18 +61,18 @@ Useful addons and their IDs:
 
 Other addons will have no effect on the embed.
 
-## Security considerations {#security}
+## 安全考虑 {#security}
 
 If you use user-supplied information to generate embed links, you should sanitize any arguments to make sure users can't supply arbitrary URL parameters as some can lead to unexpected behaviors.
 
-## Need more control? {#packager}
+## 需要更多可配置性? {#packager}
 
 Use the [TurboWarp Packager](https://packager.turbowarp.org/) for more control over the loading screen, accent colors, controls, and more. You can also [embed the output of the packager](/packager/embedding) very easily.
 
-## Donations {#donations}
+## 捐赠 {#donations}
 
 If you use a TurboWarp embed in a commercial website, it is in your best interest to [donate to us and the projects we rely upon](/donate) to ensure the embed continues to function smoothly. ❤️
 
-## License {#license}
+## 开源协议 {#license}
 
 TurboWarp is licensed under the [GPLv3.0](https://github.com/TurboWarp/scratch-gui/blob/develop/LICENSE). We believe that an `<iframe>` of a GPLv3.0 work doesn't create a derivative work under the GPLv3.0, rather it creates an "aggregate work" which is not subject to the same requirements as derivative works. However, we are not lawyers and this is not legal advice. Talk to a lawyer if this matters to you.

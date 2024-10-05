@@ -55,7 +55,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
-          editUrl: 'https://github.com/TurboWarp/docs/edit/master/',
+          editUrl: 'https://github.com/FurryR/turbowarp-docs-cn/edit/master/',
           breadcrumbs: false,
         },
         theme: {

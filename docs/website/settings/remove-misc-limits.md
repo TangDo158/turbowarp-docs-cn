@@ -5,12 +5,12 @@ hide_table_of_contents: true
 
 # 移除其他限制
 
-Disables various limits that aren't significant enough to get a dedicated toggle.
+移除某些太杂以至于无法分配到一个复选框的限制。
 
- - Pitch sound effect range is increased from 360 to 1000
- - Blocks that set or change sound effects or volume run instantly instead of stopping the script for a full frame
- - Minimum pen size is reduced from 1 to 0 and maximum pen is increased from 1200 to infinite
- - Mouse X and Y coordinates will not be rounded, which can be useful in fullscreen
- - Removes 30 concurrent drum/note limit from the music extension
+ - 音调音效的最大值由 360 升到 1000。
+ - 用于设置或增加声音音效、音量的积木现在立即运行，而不会延迟当前线程一个渲染帧。
+ - 最小画笔大小由 1 降到 0，且最大画笔大小由 1200 升到无限大。
+ - 鼠标 X 和 Y 坐标现在不会再被取整。对于全屏非常有用。
+ - 移除音乐扩展对于鼓和音符最大 30 的并发限制。
 
-This list will be expanded over time.
+这个列表会随时间而扩展。

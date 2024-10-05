@@ -36,12 +36,12 @@ The local development server is set up with the correct headers so that you don'
 
 In the future, we may consider adding more development features.
 
-## Exercises
+## 课后练习
 
 1. Can you figure out how to add a new HTML file to the development server? (Hint: <Spoiler>look into the "website" folder</Spoiler>)
 1. Can you figure out how to add your extension to the homepage list? (Hint: <Spoiler>look at "extensions/extensions.json"</Spoiler>)
 1. Can you figure out how to add an image for your extension on the homepage? (Hint: <Spoiler>create an image in "images" with the same folder and basename as the file in "extensions"</Spoiler>)
 
-## Next steps
+## 下一步
 
 Next, let's use our improved development experience to [learn about more of the APIs and options available to extensions](./assorted-apis).

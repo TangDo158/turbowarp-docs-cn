@@ -4,7 +4,7 @@ class HelloDocs {
       id: 'hellodocs',
       name: '你好 扩展文档！',
       // highlight-next-line
-      docsURI: 'https://docs.turbowarp.org/development/extensions/docsURI-demo',
+      docsURI: 'https://furryr.github.io/turbowarp-docs-cn/development/extensions/docsURI-demo',
       blocks: [
         {
           opcode: 'hello',

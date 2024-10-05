@@ -6,15 +6,15 @@ hide_table_of_contents: true
 
 Once projects exist using your extension, it is critical that you do not change the extension in ways that will break compatibility as doing so will effectively **corrupt projects.**
 
-## What you must never change
+## 你最好别动什么
 
-### The extension ID must never change
+### 永远别动扩展 ID
 
 ```js
   getInfo() {
     return {
       // highlight-start
-      // THIS MUST NEVER CHANGE
+      // 别动，不然用你扩展的作品就全坠机了！！！
       id: 'fetch'
       // highlight-end
       // ...
@@ -22,7 +22,7 @@ Once projects exist using your extension, it is critical that you do not change 
   }
 ```
 
-### Block opcodes and types must never change
+### 永远别动积木的 opcode 和积木类型
 
 Instead, create a new block and mark the old one as `hideFromPalette: true`.
 
@@ -35,7 +35,7 @@ It is generally safe to change blockType from REPORTER to BOOLEAN or from HAT to
       blocks: [
         {
           // highlight-start
-          // THESE MUST NEVER CHANGE
+          // 别删，不然用这个积木的作品就别想编辑作品了！！！
           blockType: Scratch.BlockType.REPORTER,
           opcode: "fetch",
           // highlight-end
@@ -46,7 +46,7 @@ It is generally safe to change blockType from REPORTER to BOOLEAN or from HAT to
   }
 ```
 
-### Blocks must never be removed
+### 永远别删积木
 
 Instead, create a new block and mark the old one as `hideFromPalette: true`.
 
@@ -56,7 +56,7 @@ Instead, create a new block and mark the old one as `hideFromPalette: true`.
       // ...
       blocks: [
         // highlight-start
-        // THIS MUST NEVER BE DELETED
+        // 别删，不然用这个积木的作品就全坠机了！！！
         {
           opcode: "old",
           hideFromPalette: true
@@ -68,7 +68,7 @@ Instead, create a new block and mark the old one as `hideFromPalette: true`.
   }
 ```
 
-### Argument IDs and types must never change or be removed
+### 永远别动参数 ID 和类型
 
 ```js
   getInfo() {
@@ -93,7 +93,7 @@ Instead, create a new block and mark the old one as `hideFromPalette: true`.
   }
 ```
 
-### Arguments must never be added to existing blocks
+### 永远别往已经存在的积木加参数
 
 Instead, create a new block and mark the old one as `hideFromPalette: true`. The new block can be reimplemented in terms of the old one:
 
@@ -134,19 +134,19 @@ Instead, create a new block and mark the old one as `hideFromPalette: true`. The
   }
 ```
 
-### Don't modify isTerminal
+### 别动 isTerminal
 
 If a COMMAND block does not already have `isTerminal: true`, then don't add it as doing so will cause existing projects that connect blocks underneath to break. Instead, create a new block and optionally hide the old one.
 
-### Don't modify acceptReporters
+### 别动 acceptReporters
 
 Converting an input menu to a field menu and vice-versa does not work and will corrupt projects. Create a new menu and block instead.
 
-### Don't significantly change block behavior
+### 别显著修改积木的行为
 
 Trivial bug fixes are typically fine, but significant changes may break projects. This is a bit harder to quantify; the best way to make sure your changes don't break projects is extensive testing.
 
-## What you can change
+## 你可以动什么
 
 You can always change these parts of extension metadata:
 
@@ -166,12 +166,12 @@ You can always change these parts of blocks and arguments:
 
 For menus, you can always change `text`, but you should not change `value` without careful consideration. Adding menu items is always okay, but removing menu items is dangerous.
 
-## What if you need to break compatibility?
+## 万一我就是非得动不可呢？
 
 There are times when there is no option but to break backward compatibility. In these instances, you should **create a brand new extension with an entirely new ID** and leave the old version untouched.
 
 For example, if your extension `fetch` needs a complete redesign, you could create a new extension with the ID `fetch2`.
 
-## Next steps
+## 下一步
 
 Next, let's learn [how to share your extension with the world](./share).

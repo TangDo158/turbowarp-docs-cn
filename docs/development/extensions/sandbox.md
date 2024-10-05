@@ -11,7 +11,7 @@ There are two types of custom extensions:
 
 This difference has a significant impact on your extensions. So far we've primarily focused on creating sandboxed extensions, but what does that mean?
 
-## The sandbox
+## 沙箱
 
 The sandbox is actually an `<iframe>`. Sandboxed extensions are run in a sandboxed cross-origin iframe that can't directly access the main page with the editor and the VM; it's stuck in its own isolated world.
 
@@ -32,7 +32,7 @@ And perhaps the biggest limitation of all is that *every* time a block runs, the
 
 This is a very significant limitation and it makes custom extensions almost useless, which is why we introduced support for...
 
-## Unsandboxed extensions
+## 非沙箱扩展
 
 As the name implies, unsandboxed extensions do not run in an iframe. They run in the same context as Scratch itself as `<script>` tags.
 
@@ -44,12 +44,12 @@ This means that unsandboxed extensions:
 
 And perhaps most importantly, running a block from an unsandboxed extension is actually instantaneous -- no forced 1 frame delay.
 
-## Exercises
+## 课后练习
 
 1. Create a sandboxed extension (same as we've been building so far) with a COMMAND block that does nothing. Create a new empty project and create a repeat (10) loop that runs this block 4 times. Observe that, even though the blocks don't do anything, it takes more than a second for the loop to complete.
 1. In the repeat loop, replace the block from the extension with a "set my variable to 0" block instead. Observe that the loop completes instantly. This is how blocks from unsandboxed extensions will behave.
 1. Inside a custom extension, use console.log to output the value of `window.origin`. Compare this to running `window.origin` in your browser's developer console on turbowarp.org.
 
-## Next steps
+## 下一步
 
 Unsandboxed extensions are clearly better, so [let's write one](./unsandboxed).

@@ -63,7 +63,7 @@ When Scratch runs your block functions, it will pass in an object for the first 
 
 Arguments can be a string, number, or boolean regardless of the type specified as the argument's `type`. Your code must ensure to cast values as needed.
 
-## Static menus
+## 静态下拉菜单
 
 Sometimes you might prefer your blocks to have a dropdown. These are called menus. We will first discuss static menus. These are menus that contain a fixed set of items that never changes.
 
@@ -92,11 +92,11 @@ There are some instances where you want the text that is displayed to the user i
 
 Notice that, although the dropdown displays UPPERCASE in the editor, the block actually receives "up".
 
-## Exercises
+## 课后练习
 
 1. Add a block that does the same thing as the built-in Scratch "join" block. It should take two arguments and produce a new string joining them together. Make sure your block casts the arguments to strings so when someone runs "join ((1 + 2)) ((3 + 4))" they get "37" not "10".
 1. Create a boolean block that takes a number argument and a menu argument with the options "odd" and "even". The block should return whether the given number is either odd or even, as the menu says.
 
-## Next steps
+## 下一步
 
 All of the blocks up until this point have been simple and the block completes (almost) immediately, but [what if the block needs to wait for something like a network request to complete](./async)?

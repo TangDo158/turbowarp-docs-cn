@@ -4,7 +4,7 @@ import CodeBlock from '@theme/CodeBlock';
 
 export const ExtensionCode = ({title, children}) => {
   const isBrowser = useIsBrowser();
-  const origin = isBrowser ? location.origin : `https://docs.turbowarp.org`;
+  const origin = isBrowser ? location.origin : `https://furryr.github.io/turbowarp-docs-cn`;
   return (
     <div>
       <CodeBlock

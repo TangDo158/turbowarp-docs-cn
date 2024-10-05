@@ -12,7 +12,7 @@ We hope that you found this tutorial helpful. Please give feedback and ask quest
 
 Thank you for reading this far.
 
-## Remaining topics to include in the future
+## 未来需要添加的主题
 
  - Dynamic menus
  - Block utility stack frames, yield, yieldTick, etc.

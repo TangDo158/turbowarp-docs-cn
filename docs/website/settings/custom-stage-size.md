@@ -5,12 +5,12 @@ hide_table_of_contents: true
 
 # 自定义舞台大小
 
-Changes the size of the Scratch stage from 480x360 (4:3) to something else.
+将 480x360 (4:3)，也就是 Scratch 原来的舞台的大小设置为一个自定义值。
 
 :::caution
-Most projects will not work properly with custom stage size.
+大部分项目无法适配自定义舞台大小。
 :::
 
-640x360 will make a widescreen 16:9 stage. Using higher resolutions such as 1280x720, 1920x1080, or larger is technically possible, but we recommend using a lower resolution with the same aspect ratio and allowing fullscreen mode to upscale it to the user's display (remember that some displays might not even fit such large stages!).
+640x360 可以让舞台变为宽屏 (16:9)。使用更高的分辨率，比如 1280x720、1920x1080 甚至更高在理论上都是可能的，但我们推荐使用一个有着相同长宽比的较低的分辨率，并且允许全屏模式将它缩放到用户显示屏的大小 (记住有些显示屏甚至无法装下这么大的舞台)。
 
-Projects can detect the stage size using methods such as https://scratch.mit.edu/projects/588493413/
+项目可以用类似于 https://scratch.mit.edu/projects/588493413/ 中的方法来检测舞台大小。

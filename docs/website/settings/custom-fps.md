@@ -5,19 +5,19 @@ hide_table_of_contents: true
 
 # 60 FPS (自定义帧率)
 
-Custom FPS (frames per second) changes how often scripts are run every second. Most often this is changed to 60 FPS, but any value between 1 and 250 is possible.
+自定义帧率会改变每秒脚本运行的频率。大部分情况下这会被设置为 60 FPS，但是在 1 到 250 间的值都是可以的。
 
-A value of 0 is special: It will make the project run at the same framerate as the screen instead of a set interval. This also means that the project's scripts may stop running when the project's tab is hidden.
+将帧率设置为 0 时的行为比较特殊：它会让项目以屏幕刷新率帧数运行。这也意味着，当项目的页面被隐藏时，项目会暂停运行。
 
-A vast majority of projects will not work properly with custom framerates. For these projects, [interpolation](interpolation) should be used instead. For example, consider the following simple script:
+很多项目无法与自定义帧率兼容。对于这些项目，你应当使用 [补帧](interpolation)。比如，考虑以下简单的脚本：
 
-![When flag clicked, forever move 1 step](./forever-move-1-step.svg)
+![当绿旗被点击时，永远移动1步](./forever-move-1-step.svg)
 
-When running at 30 FPS (as Scratch typically does), this script will run 30 times per second so the sprite will move 30 steps per second. However, if the framerate is changed to 60, the script will run 60 times per second so the sprite will move twice as many steps in a second.
+当运行在 30 FPS (一般 Scratch 的帧率) 时，这个脚本每秒会运行 30 次，也就意味着每秒移动 30 步。然而，一旦帧率被修改为 60，这个脚本每秒会运行 60 次，也就是说每秒移动的步数会是原来的两倍。
 
-To make projects that are compatible with custom framerates, you should use techniques such as delta time:
+若想让项目兼容自定义帧率，你可以使用以下技巧，比如时间偏差：
 
- - https://en.wikipedia.org/wiki/Delta_timing
- - https://scratch.mit.edu/projects/487694716/ (Scratch example)
+ - https://en.wikipedia.org/wiki/Delta_timing (Wikipedia 英文页面)
+ - https://scratch.mit.edu/projects/487694716/ (Scratch 示例)
 
-These techniques may require significant changes to your project.
+要使用这些技巧，你的项目可能需要大改一番。

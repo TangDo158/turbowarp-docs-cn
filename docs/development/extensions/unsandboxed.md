@@ -8,7 +8,7 @@ import {ExtensionCode, Spoiler} from './utils.js';
 
 Unsandboxed extensions run as plain `<script>` tags in the main window rather than in a sandbox. They have access to a lot of new powers and responsibilities that we will discuss below.
 
-## URL restrictions
+## URL 限制
 
 To protect users from malicious extensions, extensions loaded from URLs will only run unsandboxed if their URL begins with one of these *exactly*:
 
@@ -19,7 +19,7 @@ As you don't have control over extensions.turbowarp.org, you will have to use th
 
 When manually loading an extension from a file or JavaScript source code, there is an option to load the extension without the sandbox. This option to force an extension to run unsandboxed does not exist when using URLs due to security concerns.
 
-## Syntax
+## 语法结构
 
 The syntax for unsandboxed extensions is very familiar but has some differences. Technically, if you just copy and paste your old sandboxed extensions as unsandboxed extensions, it will appear to just work. However, this is dangerous and is likely to cause bugs later.
 
@@ -70,7 +70,7 @@ Using this template prevents unsandboxed extensions from interfering with each o
 
 An interesting thing to note about this template is that it is backward compatible with sandboxed extensions. As long as the extension doesn't use any of the features given to unsandboxed extensions, it will continue to work the same as a sandboxed extension.
 
-## A more complete example
+## 一个更完善的示例
 
 Here you can see a complete unsandboxed extension:
 
@@ -84,7 +84,7 @@ Create a new empty project with a repeat (30) loop that adds the "hello" block t
 
 Observe that the majority of the code is still identical: You still create a class, then call Scratch.extensions.register(), then Scratch calls getInfo() which returns the same type of object. Just the surrounding template is different.
 
-## Increased power brings increased responsibility
+## 能力越大，责任越大
 
 Before we talk about the new APIs, we want to note some additional requirements for unsandboxed extensions:
 
@@ -92,7 +92,7 @@ Before we talk about the new APIs, we want to note some additional requirements 
  - Input and boolean blocks must return a valid value. While sandboxed extensions are free to neglect this, unsandboxed extensions that don't return proper values (string, number, or boolean) can break scripts in unknown ways.
  - Blocks must not get stuck in infinite loops. While sandboxed extensions will usually not be able to freeze the entire window if they get stuck in a loop, unsandboxed extensions will. This can result in **data loss**.
 
-## Accessing Scratch internals
+## 访问 Scratch 内部接口
 
 The big thing that unsandboxed extensions can do is directly access Scratch internals.
 
@@ -124,7 +124,7 @@ Here is an example of an extension that uses Scratch.vm to toggle turbo mode, si
 
 <ExtensionCode title="unsandboxed/turbo-mode">{require("!raw-loader!@site/static/example-extensions/unsandboxed/turbo-mode.js")}</ExtensionCode>
 
-## The block utility object
+## “积木工具” BlockUtility 对象
 
 When a sandboxed custom extension is run, all it receives are the arguments that the scripts provided. It doesn't even know which sprite is executing it. We now introduce the second argument passed to block functions: BlockUtility.
 
@@ -153,7 +153,7 @@ Note that every sprite, script, and block shares the same block utility object. 
   }
 ```
 
-## Common templates
+## 通用模板
 
 Here are some common copy-and-pasteable code snippets that can be used:
 
@@ -173,7 +173,7 @@ If you're using the `vm`, `runtime` or `Cast` APIs a lot, common practise is to 
   const Cast = Scratch.Cast; // Discussed later.
 ```
 
-## Permissioned APIs
+## 带权限的 API
 
 Whereas sandboxed extensions are free to use APIs such as fetch() as they please, unsandboxed extensions should instead ask for permission before making a request to any remote service. This gives the user control over their privacy. While there is no technical measures enforcing this at runtime, it is required for all extensions on [extensions.turbowarp.org](https://extensions.turbowarp.org).
 
@@ -181,7 +181,7 @@ Requests to some popular services such as [GitHub Pages](https://pages.github.co
 
 These permissioned APIs will also automatically prevent projects from running arbitrary JavaScript by attempting to, for example, redirect to a `javascript:` URL.
 
-### Fetching APIs, WebSockets, images, audio files, etc.
+### 网络请求 API、WebSocket、图像、音频文件等等
 
 Use `Scratch.fetch(url)` instead of `fetch(url)`. Check `await Scratch.canFetch(url)` before using other APIs that connect to remote websites.
 
@@ -215,7 +215,7 @@ if (await Scratch.canFetch(url)) {
 }
 ```
 
-### Opening new tabs or windows
+### 打开新页面或者窗口
 
 Use `Scratch.openWindow(url)` instead of `window.open(url)`. `Scratch.openWindow` always sets the target to `"_blank"` to open a new tab or window. If you can't use `Scratch.openWindow(url)` for some reason, check `await Scratch.canOpenWindow(url)` before calling `window.open(url)`.
 
@@ -231,7 +231,7 @@ const win = window.open(url, '_blank', 'width=400,height=400')
 const win = await Scratch.openWindow(url, 'width=400,height=400');
 ```
 
-### Redirecting the current page
+### 让当前页面跳转到新网址
 
 Use `Scratch.redirect(url)` instead of `location.href = url`. If you can't use `Scratch.redirect(url)`, check `await Scratch.canRedirect(url)` before running `location.href = url`.
 
@@ -242,7 +242,7 @@ location.href = url;
 await Scratch.redirect(url);
 ```
 
-## Exercises
+## 课后练习
 
 We encourage you to try to figure these out without the hints. It will make you much more familiar with how VM internals work.
 
@@ -250,6 +250,6 @@ We encourage you to try to figure these out without the hints. It will make you 
 1. Create a block that returns the x position of the sprite, similar to the "x position" block. (Hint: <Spoiler>target.x</Spoiler>)
 1. Create a block that moves the sprite to the center of the screen, similar to "go to x: 0 y: 0". (Hint: <Spoiler>target.setXY(x, y)</Spoiler>)
 
-## Next steps
+## 下一步
 
 Depending on the server you've been using, you might be tired of remembering to hard-reload all of the time. Let's learn about [a better development server](./better-development-server).

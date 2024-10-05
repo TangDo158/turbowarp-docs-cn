@@ -6,9 +6,9 @@ sidebar_label: 总览
 
 # 高级设定
 
-Advanced settings allow you to reconfigure your project to do things that Scratch normally wouldn't let you do.
+高级设定允许你重新设置你的项目来实现一些 Scratch 通常不允许你做的事情。
 
-Navigate using the sidebar on the left. Look under the "Advanced settings" category.
+请用左侧的侧栏进行导航。看看 "高级设定" 分类下方的内容吧。
 
 <!-- Migration for old links to https://docs.turbowarp.org/advanced-settings#high-quality-pen -->
 import BrowserOnly from "@docusaurus/BrowserOnly";

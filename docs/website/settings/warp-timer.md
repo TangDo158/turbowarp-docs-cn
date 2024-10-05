@@ -5,8 +5,12 @@ hide_table_of_contents: true
 
 # 循环计时器
 
-Warp Timer makes scripts check if they are stuck in a long or infinite loop and run at a low framerate instead of getting stuck until the loop finishes. This fixes most crashes but has a significant performance impact, so it's only enabled by default in the editor.
+循环计时器会让脚本检查它们是否被卡在一个长或者无限循环中，然后让页面以低帧率运行 (主动让出) 而不是卡死到循环结束。这样做可以修复大部分死循环导致的页面崩溃，但会对作品造成显著的性能负面影响，因此它只在编辑器中默认启用。
 
-As a demonstration, consider the project https://turbowarp.org/446742201?stuck. This project has an infinite loop inside a run without screen refresh block. With Warp Timer enabled, the project will run at around two frames per second. With Warp Timer disabled, however, the script will never end.
+:::caution
+译者注：因为处理卡死的方法是主动让出，对于某些依赖时序的项目，启用循环计时器可能导致它们在长循环时工作异常，因为线程执行顺序被打乱了。
+:::
 
-Warp Timer was previously called "Stuck Checking".
+作为一个示范，请看 [这个项目](https://turbowarp.org/446742201?stuck)。在项目中有一个无限循环，并且没有能让屏幕刷新的积木。当循环计时器启用时，页面将以每秒 2 帧的速度运行。然而，如果关闭循环计时器，脚本永远不会结束，而页面会卡死。
+
+循环计时器以前被称作“卡顿检查”。

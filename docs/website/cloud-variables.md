@@ -22,15 +22,15 @@ Some things to keep in mind:
 
 ---
 
-## For bot developers and advanced users {#advanced}
+## 对于机器人开发者和高级用户 {#advanced}
 
 We allow and encourage developing bots and custom clients. However, due to persistent abuse, we ask you to follow a few rules. Remember that **this is a free service operated by volunteers.** The CPU to parse messages and the bandwidth to send messages to other users is not free. The information below is applicable to both users and authors of cloud variable libraries.
 
-### Protocol {#protocol}
+### 协议 {#protocol}
 
 The protocol is the [same as Scratch's cloud variables](https://github.com/TurboWarp/cloud-server/blob/master/doc/protocol.md). We provide a [barebones reference library for Node.js](https://www.npmjs.com/package/@turbowarp/mist). As the protocol is fully open, you do not need to use our library if you don't want to.
 
-### User-Agent is required {#user-agent}
+### 需要 User-Agent {#user-agent}
 
 Bots must provide a valid [User-Agent](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent) header in their connection. That includes contact information (such as a Scratch profile link, email address, GitHub issue page, etc.) and the name and version of the cloud variable library being used (if applicable). Exact syntax does not matter; just needs to be human readable. Some examples of good User-Agents:
 
@@ -78,7 +78,7 @@ const ws = new WebSocket("wss://clouddata.turbowarp.org", {
 
 </details>
 
-### Project ID {#project-id}
+### 项目 ID {#project-id}
 
 Project IDs are not limited to just numbers -- they can be any text you want. If you're using a custom ID for a project that doesn't live on the Scratch website, use text like `example.com/my-project` so that we can verify your project is legitimate. If we see a lot of cloud variable activity using a project ID that doesn't make sense, we will disable that project ID.
 
@@ -89,7 +89,7 @@ For this reason, your project ID options should be strings, not an integer or ot
 
 </details>
 
-### Usernames {#username}
+### 用户名 {#username}
 
 The cloud variable protocol requires you to provide a username. The server tries to ensure that all usernames are safe before allowing the connection. We recommend just setting the username to `player` followed by between 2 and 7 random numbers as your connection will start faster (we won't ask the Scratch API to validate it). If your bot needs a specific username, store it in a separate variable.
 
@@ -100,7 +100,7 @@ As long as you are forcing users to have a valid User-Agent, the username is red
 
 </details>
 
-### Don't rapidly open and close connections {#one-connection}
+### 不要频繁打开和关闭连接 {#one-connection}
 
 We've seen a pattern of bots opening a connection, closing it, and then immediately opening a new one in an endless loop. The end result is a slow bot that uses way more network and CPU resources than it has any reason to, which is not allowed. We think this is because some poorly designed libraries have APIs that let people write code like this:
 
@@ -120,15 +120,15 @@ connection = cloudlibrary.connect(project_id, username, user_agent, on_set)
 
 It is possible to offer an API like `get_var` as long as the implementation is event-driven and uses one connection internally (then `get_var` just returns the most recently received value). It just takes a little bit of work.
 
-### Updates are buffered {#buffering}
+### 更新会被缓存 {#buffering}
 
 For performance, the server will buffer up several cloud variable updates to send out as one group. Updates are not guaranteed to be sent in the same order they are received, and some updates may be skipped entirely. Because of this buffering, sending updated variables more than 10 times per second is completely redundant.
 
-### Respond to pings {#pings}
+### 对于 ping 的应答 {#pings}
 
 The server will periodically send a [WebSocket ping frame](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_servers#pings_and_pongs_the_heartbeat_of_websockets), and you must respond with a pong or else the connection will drop. Refer to the documentation for your WebSocket library to see how to enable ping/pong support if it isn't enabled by default.
 
-### Important debug information {#debug}
+### 重要的调试信息 {#debug}
 
 To make things easier for us, you, and anyone using your library, please log these things somewhere (such as in error messages) instead of silently ignoring them:
 

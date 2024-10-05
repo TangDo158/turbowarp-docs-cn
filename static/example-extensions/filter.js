@@ -7,7 +7,7 @@ class FilterExample {
         {
           opcode: 'all',
           blockType: Scratch.BlockType.COMMAND,
-          text: '角色和背景都能用',
+          text: '角色和舞台都能用',
         },
         {
           opcode: 'sprites',
@@ -19,7 +19,7 @@ class FilterExample {
         {
           opcode: 'stage',
           blockType: Scratch.BlockType.COMMAND,
-          text: '只在背景能用',
+          text: '只在舞台能用',
           // highlight-next-line
           filter: [Scratch.TargetType.STAGE]
         },

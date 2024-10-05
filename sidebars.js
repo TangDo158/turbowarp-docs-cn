@@ -5,7 +5,7 @@ module.exports = {
     'website/cloud-variables',
     {
       type: 'category',
-      label: 'Advanced Settings',
+      label: '高级设定',
       collapsed: false,
       items: [
         'website/settings/overview',
@@ -35,7 +35,7 @@ module.exports = {
     'development/home',
     {
       type: 'category',
-      label: 'Custom Extension Tutorial',
+      label: '自定义扩展教程',
       collapsed: false,
       items: [
         'development/extensions/introduction',

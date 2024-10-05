@@ -22,10 +22,10 @@ The restriction on return values still applies: you still need to ensure that yo
 
 This also demonstrates error handling. Whenever your promises can reject, fail, or error, you should add a catch(). How exactly you handle this will depend on your use case, but often you will want to log the error to the console and return a string indicating the error.
 
-## Exercises
+## 课后练习
 
 1. Create a block that waits 100ms for each time it's been called. For example, the first time it's run it waits 100ms, then 200ms, then 300ms, then 400ms, etc.
 
-## Next steps
+## 下一步
 
 You may have realized that even your blocks that don't return a Promise don't actually run instantly and your extension can't access many APIs. To determine why, we need to [discuss what the "sandbox" really is, and what it means for your extensions](./sandbox.md).

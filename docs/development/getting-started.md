@@ -10,7 +10,7 @@ These are the instructions for setting up a development environment for TurboWar
 
 If you just want to develop custom extensions, see [the custom extension documentation](./extensions/introduction.md) instead.
 
-## Dependencies {#dependencies}
+## 依赖 {#dependencies}
 
 All of our packages need [Git](https://git-scm.com/download) and [Node.js **v20**](https://nodejs.org/en/download) (likely anything v18 or later works, but we can't promise that). We assume you are familiar with the command line.
 
@@ -18,7 +18,7 @@ Some packages may want some additional things installed, so check the README in 
 
 TurboWarp is a large app that can require multiple gigabytes of disk space and memory to build.
 
-## A note on how Scratch is organized {#organization}
+## 关于 Scratch 各组件功能的提示 {#organization}
 
 Scratch is broken up into a bunch of different packages, each implementing one part of the app.
 
@@ -34,7 +34,7 @@ Scratch is broken up into a bunch of different packages, each implementing one p
 
 In addition, the desktop app and packager are also support repositories.
 
-## Building the GUI {#gui}
+## 构建 GUI 组件 {#gui}
 
 If you want to mod Scratch, you'll need to be able to build the GUI. This is a common pattern you'll use for developing on Scratch packages:
 
@@ -52,7 +52,7 @@ npm start
 
 This starts the live development server for most packages, if there is one. For example, for scratch-gui, the playground can be accessed at [http://localhost:8601/](http://localhost:8601/). See the README or the output of `npm start` for information for other packages.
 
-## Build {#build}
+## 构建 {#build}
 
 While `npm start` is useful for development, at some point you'll need to get raw files out. You can do this with:
 
@@ -79,7 +79,7 @@ npm run build
 
 By default TurboWarp generates links like `https://turbowarp.org/editor.html#123`. However, by setting the variables `ROOT=/` and `ROUTING_STYLE=wildcard` (in the same way that you set `NODE_ENV=production`), you can get routes like `https://turbowarp.org/123/editor` instead. Note that this requires a server that will setup the proper aliases. The webpack development server in scratch-gui is setup for this. For production you'd want something more like https://github.com/TurboWarp/turbowarp.org.
 
-## Linking other packages {#linking}
+## 链接其它组件 {#linking}
 
 To develop packages other than scratch-gui, you need to tell npm to use local copies of the package instead of the ones it downloaded from the internet. This is called *linking*. The pattern is:
 
