@@ -2,7 +2,7 @@
 hide_table_of_contents: true
 ---
 
-# Sharing your extension
+# 分享你的扩展
 
 If you want to share your extension with the broader world, you'll have to find a place to put it.
 

@@ -1,30 +1,30 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'TurboWarp Documentation',
+  title: 'Turbowarp 文档',
   url: 'https://furryr.github.io/',
   baseUrl: '/turbowarp-docs-cn/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  organizationName: 'TurboWarp',
+  organizationName: 'Turbowarp',
   projectName: 'docs',
   trailingSlash: false,
   themeConfig: {
     navbar: {
-      title: 'TurboWarp Documentation',
+      title: 'Turbowarp 文档',
       items: [
         {
           href: '/packager/',
-          label: 'Packager',
+          label: '打包器',
           position: 'left'
         },
         {
           href: '/development/',
-          label: 'Development',
+          label: '开发',
           position: 'left'
         },
         {
           href: 'https://turbowarp.org/',
-          label: 'TurboWarp',
+          label: 'Turbowarp',
           position: 'right'
         },
         {

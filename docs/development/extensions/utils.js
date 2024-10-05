@@ -25,7 +25,7 @@ export const ExtensionCode = ({title, children}) => {
                 )
               }
             >
-              {'Try this extension'}
+              {'在 Turbowarp 中尝试这个扩展'}
             </a>
           </div>
         )}

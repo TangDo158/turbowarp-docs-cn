@@ -3,7 +3,7 @@ slug: /return
 hide_table_of_contents: true
 ---
 
-# Custom Reporters
+# 自定义返回值积木
 
 TurboWarp now supports custom reporters which lets you use any custom block in your project as a reporter, like the addition block built into Scratch. This is a pretty standard feature in text-based programming languages, but it can be hard to understand initially.
 

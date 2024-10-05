@@ -4,20 +4,20 @@
     getInfo() {
       return {
         id: 'broadcast1example',
-        name: 'Broadcast Example 1',
+        name: '广播示例 1',
         blocks: [
           {
             opcode: 'whenReceived',
             // highlight-start
             blockType: Scratch.BlockType.HAT,
-            text: 'when I receive the event',
+            text: '当我收到事件',
             isEdgeActivated: false
             // highlight-end
           },
           {
             opcode: 'broadcast',
             blockType: Scratch.BlockType.COMMAND,
-            text: 'broadcast the event'
+            text: '广播事件'
           }
         ]
       };

@@ -2,7 +2,7 @@
 hide_table_of_contents: true
 ---
 
-# Hello, world!
+# 你好，世界！
 
 import {ExtensionCode} from './utils.js';
 

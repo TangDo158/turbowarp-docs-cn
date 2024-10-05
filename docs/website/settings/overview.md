@@ -1,10 +1,10 @@
 ---
 slug: /advanced-settings
 hide_table_of_contents: true
-sidebar_label: Overview
+sidebar_label: 总览
 ---
 
-# Advanced Settings
+# 高级设定
 
 Advanced settings allow you to reconfigure your project to do things that Scratch normally wouldn't let you do.
 

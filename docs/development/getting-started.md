@@ -4,7 +4,7 @@ sidebar_position: 2
 hide_table_of_contents: true
 ---
 
-# Modding Introduction
+# Scratch 二次开发引言
 
 These are the instructions for setting up a development environment for TurboWarp itself. This is useful if you want to submit pull requests to us or make your own mod.
 

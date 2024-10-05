@@ -2,19 +2,19 @@ class HideFromPaletteExample {
   getInfo() {
     return {
       id: 'hidefrompaletteexample',
-      name: 'hideFromPalette Example',
+      name: 'hideFromPalette 示例',
       blocks: [
         {
           opcode: 'hidden',
           blockType: Scratch.BlockType.REPORTER,
-          text: 'example block (visible)'
+          text: '示例积木 (visible)'
         },
       ]
     };
   }
 
   hidden() {
-    return 'The block is still visible';
+    return '积木还是可见的捏';
   }
 }
 

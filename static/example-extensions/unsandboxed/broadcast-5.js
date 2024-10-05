@@ -4,12 +4,12 @@
     getInfo() {
       return {
         id: 'broadcast5example',
-        name: 'Broadcast Example 5',
+        name: '广播示例 5',
         blocks: [
           {
             opcode: 'whenReceived',
             blockType: Scratch.BlockType.HAT,
-            text: 'when I receive [EVENT_OPTION]',
+            text: '当收到了 [EVENT_OPTION]',
             isEdgeActivated: false,
             arguments: {
               EVENT_OPTION: {
@@ -21,7 +21,7 @@
           {
             opcode: 'broadcast',
             blockType: Scratch.BlockType.REPORTER,
-            text: 'broadcast [EVENT]',
+            text: '广播 [EVENT]',
             arguments: {
               EVENT: {
                 type: Scratch.ArgumentType.STRING,
@@ -47,7 +47,7 @@
       const threads = util.startHats('broadcast5example_whenReceived', {
         EVENT_OPTION: EVENT
       });
-      return `Started ${threads.length} new threads!`;
+      return `启动了 ${threads.length} 个新线程！`;
       // highlight-end
     }
   }

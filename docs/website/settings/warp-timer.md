@@ -3,7 +3,7 @@ slug: /warp-timer
 hide_table_of_contents: true
 ---
 
-# Warp Timer
+# 循环计时器
 
 Warp Timer makes scripts check if they are stuck in a long or infinite loop and run at a low framerate instead of getting stuck until the loop finishes. This fixes most crashes but has a significant performance impact, so it's only enabled by default in the editor.
 

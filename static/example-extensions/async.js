@@ -2,11 +2,11 @@ class AsyncExtension {
   getInfo() {
     return {
       id: 'asyncexample',
-      name: 'Async Blocks',
+      name: '异步积木',
       blocks: [
         {
           opcode: 'wait',
-          text: 'wait [TIME] seconds',
+          text: '等待 [TIME] 秒',
           blockType: Scratch.BlockType.COMMAND,
           arguments: {
             TIME: {
@@ -17,7 +17,7 @@ class AsyncExtension {
         },
         {
           opcode: 'fetch',
-          text: 'fetch [URL]',
+          text: '请求 [URL]',
           blockType: Scratch.BlockType.REPORTER,
           arguments: {
             URL: {
@@ -49,7 +49,7 @@ class AsyncExtension {
       })
       .catch((error) => {
         console.error(error);
-        return 'Uh oh! Something went wrong.';
+        return '呃，请求失败了。';
       });
   }
   // highlight-end

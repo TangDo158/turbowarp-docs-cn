@@ -2,7 +2,7 @@
 hide_table_of_contents: true
 ---
 
-# Events and hats
+# “事件”和“帽型”积木
 
 import {ExtensionCode, Spoiler} from './utils.js';
 

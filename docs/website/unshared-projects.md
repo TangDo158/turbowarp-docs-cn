@@ -3,7 +3,7 @@ slug: /unshared-projects
 hide_table_of_contents: true
 ---
 
-# Unshared projects are no longer visible
+# 未分享的作品不再可见
 
 Unshared projects can no longer be opened on TurboWarp, forkphorus, and other third-party sites due to changes to the Scratch API.
 

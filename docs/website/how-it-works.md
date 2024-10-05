@@ -3,7 +3,7 @@ slug: /how
 hide_table_of_contents: true
 ---
 
-# How TurboWarp runs Scratch projects 10-100x faster
+# Turbowarp 是如何让 Scratch 作品加速 10-100 倍的
 
 TurboWarp uses a *compiler* while Scratch uses an *interpreter*. This allows TurboWarp to run somewhere between 10-100x faster depending on the project, but it makes live script editing [impracticable](#live-script-editing).
 

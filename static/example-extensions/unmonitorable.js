@@ -2,17 +2,17 @@ class DisableMonitorExample {
   getInfo() {
     return {
       id: 'disablemonitorexample',
-      name: 'disableMonitor Example',
+      name: '禁止监视变量示例',
       blocks: [
         {
           opcode: 'monitorable',
           blockType: Scratch.BlockType.REPORTER,
-          text: 'this block can be monitored'
+          text: '这个积木可以被监视'
         },
         {
           opcode: 'unmonitorable',
           blockType: Scratch.BlockType.REPORTER,
-          text: 'but this one can not',
+          text: '但这个就不行了捏',
           // highlight-next-line
           disableMonitor: true
         },

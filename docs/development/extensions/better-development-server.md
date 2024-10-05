@@ -2,7 +2,7 @@
 hide_table_of_contents: true
 ---
 
-# A better development server
+# 更好的开发服务器
 
 import {Spoiler} from './utils.js';
 

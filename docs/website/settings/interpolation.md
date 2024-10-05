@@ -3,7 +3,7 @@ slug: /interpolation
 hide_table_of_contents: true
 ---
 
-# Interpolation
+# 补帧
 
 Interpolation makes motion animations in projects appear smoother by interpolating movement of sprites between frames. It's basically higher framerate without affecting how fast scripts run.
 

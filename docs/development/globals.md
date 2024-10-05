@@ -3,7 +3,7 @@ slug: /development/globals
 hide_table_of_contents: true
 ---
 
-# Globals
+# 全局变量
 
 Global variables that can be accessed using the developer console, for convenience.
 

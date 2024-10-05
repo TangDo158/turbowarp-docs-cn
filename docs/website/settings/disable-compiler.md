@@ -3,7 +3,7 @@ slug: /disable-compiler
 hide_table_of_contents: true
 ---
 
-# Disable Compiler
+# 禁用编译器
 
 This option turns off the TurboWarp compiler, which lets script update immediately, as in Scratch. This is only useful when debugging bugs in the compiler or when using the editor to create a project.
 

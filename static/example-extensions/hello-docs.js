@@ -2,7 +2,7 @@ class HelloDocs {
   getInfo() {
     return {
       id: 'hellodocs',
-      name: 'Hello Docs!',
+      name: '你好 扩展文档！',
       // highlight-next-line
       docsURI: 'https://docs.turbowarp.org/development/extensions/docsURI-demo',
       blocks: [

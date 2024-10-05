@@ -2,7 +2,7 @@
   'use strict';
 
   if (!Scratch.extensions.unsandboxed) {
-    throw new Error('This example must run unsandboxed');
+    throw new Error('此示例必须无沙箱运行');
   }
 
   class When {
@@ -15,8 +15,8 @@
             // highlight-start
             blockType: Scratch.BlockType.HAT,
             opcode: 'when',
-            text: 'when [CONDITION]',
-            isEdgeActivated: false, // required boilerplate
+            text: '当 [CONDITION] 为真',
+            isEdgeActivated: false, // 一定需要指定这个选项
             arguments: {
               CONDITION: {
                 type: Scratch.BlockType.BOOLEAN
@@ -36,7 +36,7 @@
 
   // highlight-start
   Scratch.vm.runtime.on('BEFORE_EXECUTE', () => {
-    // startHats is the same as before!
+    // startHats 和之前一样！
     Scratch.vm.runtime.startHats('whenunsandboxed_when');
   });
   // highlight-end

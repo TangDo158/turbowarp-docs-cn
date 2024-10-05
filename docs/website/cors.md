@@ -3,7 +3,7 @@ slug: /cors
 hide_table_of_contents: true
 ---
 
-# CORS: Why your fetch block doesn't work
+# CORS: 为什么你的 fetch 运行不了
 
 Anyone who's used the Fetch, HTTP, Network and similar extensions has noticed that when you try to fetch certain websites, even after pressing "Allow", the block just doesn't work:
 

@@ -4,12 +4,12 @@
     getInfo() {
       return {
         id: 'broadcast3example',
-        name: 'Broadcast Example 3',
+        name: '广播示例 3',
         blocks: [
           {
             opcode: 'whenReceived',
             blockType: Scratch.BlockType.HAT,
-            text: 'when I receive [EVENT_OPTION]',
+            text: '当收到了 [EVENT_OPTION]',
             isEdgeActivated: false,
             // highlight-next-line
             shouldRestartExistingThreads: true,
@@ -23,7 +23,7 @@
           {
             opcode: 'broadcast',
             blockType: Scratch.BlockType.COMMAND,
-            text: 'broadcast [EVENT]',
+            text: '广播 [EVENT]',
             arguments: {
               EVENT: {
                 type: Scratch.ArgumentType.STRING,
@@ -36,9 +36,9 @@
           EVENT_FIELD: {
             acceptReporters: false,
             items: [
-              'Event 1',
-              'Event 2',
-              'Event 3'
+              '事件 1',
+              '事件 2',
+              '事件 3'
             ]
           }
         }

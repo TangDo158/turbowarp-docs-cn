@@ -2,7 +2,7 @@
 hide_table_of_contents: true
 ---
 
-# What is the sandbox anyways?
+# 到底什么是沙箱？
 
 There are two types of custom extensions:
 

@@ -67,4 +67,4 @@ hide_table_of_contents: true
 
 ## 更多信息和相关讨论 {#further-information}
 
-请见 https://github.com/TurboWarp/packager/issues/48。
+请见 https://github.com/TurboWarp/packager/issues/48 。

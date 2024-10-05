@@ -2,12 +2,12 @@ class CastingExample {
   getInfo() {
     return {
       id: 'castexample',
-      name: 'Casting Example',
+      name: '类型转换示例',
       blocks: [
         {
           opcode: 'toNumber',
           blockType: Scratch.BlockType.REPORTER,
-          text: 'convert [INPUT] to number',
+          text: '[INPUT] 作为数字',
           arguments: {
             INPUT: {
               type: Scratch.ArgumentType.STRING,
@@ -16,11 +16,11 @@ class CastingExample {
           }
         },
         {
-          // The opcode "toString" should work but given it's special
-          // treatment in JS, it seems a bit dangerous to use
+          // opcode "toString" 应该可以用，但是它在 JavaScript 中有特殊用途，
+          // 所以用它可能比较危险，在前面加个前缀好了。
           opcode: 'castToString',
           blockType: Scratch.BlockType.REPORTER,
-          text: 'convert [INPUT] to string',
+          text: '[INPUT] 作为字符串',
           arguments: {
             INPUT: {
               type: Scratch.ArgumentType.STRING,
@@ -31,7 +31,7 @@ class CastingExample {
         {
           opcode: 'toBoolean',
           blockType: Scratch.BlockType.BOOLEAN,
-          text: 'convert [INPUT] to boolean',
+          text: '[INPUT] 作为布尔值',
           arguments: {
             INPUT: {
               type: Scratch.ArgumentType.STRING,
@@ -42,7 +42,7 @@ class CastingExample {
         {
           opcode: 'compare',
           blockType: Scratch.BlockType.REPORTER,
-          text: 'compare [A] to [B]',
+          text: '[A] 与 [B] 比较的结果',
           arguments: {
             A: {
               type: Scratch.ArgumentType.STRING,
@@ -79,11 +79,11 @@ class CastingExample {
     // You need to use < 0, > 0, or === 0 here.
     // Do not use === 1 or === -1! That will not work in some cases.
     if (comparison === 0) {
-      return 'Equal';
+      return '相等';
     } else if (comparison > 0) {
-      return 'A is greater';
+      return 'A 更大';
     } else if (comparison < 0) {
-      return 'B is greater';
+      return 'B 更小';
     }
     // highlight-end
   }

@@ -2,7 +2,7 @@
 hide_table_of_contents: true
 ---
 
-# Example docsURI page
+# 示例 docsURI 页面
 
 The extension that demonstrates how to use docsURI points to this page.
 

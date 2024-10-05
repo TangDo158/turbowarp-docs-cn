@@ -3,7 +3,7 @@ slug: /scratch-accounts
 hide_table_of_contents: true
 ---
 
-# Scratch Accounts & TurboWarp
+# Scratch 账户和 Turbowarp
 
 While you can't sign in to your Scratch account on TurboWarp (any website other than scratch.mit.edu that asks you for your Scratch password is a SCAM -- no exceptions), you can still run projects without sharing them, upload projects to Scratch, and use your own username.
 

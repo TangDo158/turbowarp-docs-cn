@@ -3,7 +3,7 @@ slug: /cloud-variables
 hide_table_of_contents: true
 ---
 
-# Cloud Variables
+# 云变量
 
 TurboWarp has its own cloud variable server independent of Scratch.
 

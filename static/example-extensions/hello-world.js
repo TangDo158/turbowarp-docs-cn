@@ -2,19 +2,19 @@ class HelloWorld {
   getInfo() {
     return {
       id: 'helloworld',
-      name: 'It works!',
+      name: '跑起来咯！',
       blocks: [
         {
           opcode: 'hello',
           blockType: Scratch.BlockType.REPORTER,
-          text: 'Hello!'
+          text: '你好！'
         }
       ]
     };
   }
 
   hello() {
-    return 'World!';
+    return '世界！';
   }
 }
 

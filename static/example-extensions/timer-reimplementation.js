@@ -4,13 +4,13 @@ class TimerReimplementationExample {
   getInfo() {
     return {
       id: 'timerreimplementationexample',
-      name: 'Timer Example',
+      name: '计时器示例',
       blocks: [
         // highlight-start
         {
           opcode: 'whenTimerGreaterThan',
           blockType: Scratch.BlockType.HAT,
-          text: 'when timer > [TIME]',
+          text: '当计时器 > [TIME]',
           isEdgeActivated: true,
           arguments: {
             TIME: {
@@ -23,12 +23,12 @@ class TimerReimplementationExample {
         {
           opcode: 'timer',
           blockType: Scratch.BlockType.REPORTER,
-          text: 'timer'
+          text: '计时器'
         },
         {
           opcode: 'resetTimer',
           blockType: Scratch.BlockType.COMMAND,
-          text: 'reset timer'
+          text: '重置计时器'
         }
       ]
     };

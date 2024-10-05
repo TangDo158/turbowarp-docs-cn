@@ -3,7 +3,7 @@ slug: /infinite-clones
 hide_table_of_contents: true
 ---
 
-# Infinite Clones
+# 无限克隆体
 
 Infinite Clones disables Scratch's 300 clone limit.
 

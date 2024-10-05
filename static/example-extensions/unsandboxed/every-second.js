@@ -4,12 +4,12 @@
     getInfo() {
       return {
         id: 'everysecondexample',
-        name: 'Every Second',
+        name: '每秒',
         blocks: [
           {
             opcode: 'everySecond',
             blockType: Scratch.BlockType.HAT,
-            text: 'every second',
+            text: '每秒',
             isEdgeActivated: false
           }
         ]

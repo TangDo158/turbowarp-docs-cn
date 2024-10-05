@@ -3,13 +3,13 @@ slug: /blocks
 hide_table_of_contents: true
 ---
 
-# TurboWarp Blocks
+# TurboWarp 积木
 
 TurboWarp has a section of blocks that allows you to use certain features previously not accessible to Scratch projects.
 
 NEW: TurboWarp now supports unsandboxed extensions which add new blocks! https://extensions.turbowarp.org/
 
-## is compiled? and is TurboWarp? {#is-compiled}
+## is compiled? 以及 is TurboWarp? {#is-compiled}
 
 ![is compiled?](./assets/is-compiled.svg)
 
@@ -21,7 +21,7 @@ These blocks are "compatible" with Scratch because they're actually just modifie
 Every block beyond this warning is **incompatible** with Scratch. Projects that use them **can not** be uploaded to the Scratch website. If you don't use any TurboWarp-exclusive blocks, then there should be no issue with making your project in TurboWarp and uploading it to Scratch.
 :::
 
-## last key pressed {#last-key-pressed}
+## 最后一个按下的按键 {#last-key-pressed}
 
 ![last key pressed](./assets/last-key-pressed.svg)
 

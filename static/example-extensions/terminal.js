@@ -2,14 +2,14 @@ class TerminalExample {
   getInfo() {
     return {
       id: 'terminalexample',
-      name: 'Terminal Example',
+      name: '终止积木示例',
       blocks: [
         {
           opcode: 'terminalBlock',
           blockType: Scratch.BlockType.COMMAND,
           // highlight-next-line
           isTerminal: true,
-          text: 'you can not connect another block under this one!'
+          text: '下面可就接不了积木了！'
         }
       ]
     };

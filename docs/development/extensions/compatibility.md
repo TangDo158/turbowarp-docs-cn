@@ -2,7 +2,7 @@
 hide_table_of_contents: true
 ---
 
-# Maintaining compatibility
+# 保持向前兼容
 
 Once projects exist using your extension, it is critical that you do not change the extension in ways that will break compatibility as doing so will effectively **corrupt projects.**
 

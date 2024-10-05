@@ -2,28 +2,28 @@
   'use strict';
 
   if (!Scratch.extensions.unsandboxed) {
-    throw new Error('This Block Utility example must run unsandboxed');
+    throw new Error('这个“积木工具”示例必须不使用沙箱运行');
   }
 
   class BlockUtilityExamples {
     getInfo() {
       return {
         id: 'blockutilityexamples',
-        name: 'BlockUtility Examples',
+        name: '积木工具 (BlockUtility) 示例',
         blocks: [
           {
             opcode: 'getSpriteName',
-            text: 'sprite name',
+            text: '角色的名字',
             blockType: Scratch.BlockType.REPORTER,
           },
           {
             opcode: 'doesVariableExist',
-            text: 'is there a [TYPE] named [NAME]?',
+            text: '有一个类型为 [TYPE] 的 [NAME] 变量么?',
             blockType: Scratch.BlockType.BOOLEAN,
             arguments: {
               NAME: {
                 type: Scratch.ArgumentType.STRING,
-                defaultValue: 'my variable'
+                defaultValue: '我的变量'
               },
               TYPE: {
                 type: Scratch.ArgumentType.STRING,
@@ -37,16 +37,19 @@
           TYPE_MENU: {
             acceptReporters: true,
             items: [
-              // Value here corresponds to the internal types of the variables
-              // in scratch-vm. And yes, broadcasts are actually variables.
+              // value 代表的是 scratch-vm 内部变量的类型。
+              // 并且是的，广播消息也是变量。
               // https://github.com/TurboWarp/scratch-vm/blob/20c60193c1c567a65cca87b16d22c51963565a43/src/engine/variable.js#L43-L67
               {
-                text: 'variable',
+                text: '变量',
                 value: ''
               },
-              'list',
               {
-                text: 'broadcast',
+                text: '列表',
+                value: 'list'
+              },
+              {
+                text: '广播消息',
                 value: 'broadcast_msg'
               }
             ]
@@ -60,7 +63,7 @@
     }
     doesVariableExist(args, util) {
       const variable = util.target.lookupVariableByNameAndType(args.NAME.toString(), args.TYPE);
-      // Remember: Boolean blocks need to explicitly return a boolean on their own
+      // 记住：布尔值积木必须返回一个 boolean 类型的值，它们需要自己完成类型转换。
       return !!variable;
     }
     // highlight-end

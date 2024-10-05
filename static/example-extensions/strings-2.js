@@ -2,16 +2,16 @@ class Strings2 {
   getInfo() {
     return {
       id: 'strings2example',
-      name: 'Encoding',
+      name: '大小写转换',
       blocks: [
         {
           opcode: 'convert',
           blockType: Scratch.BlockType.REPORTER,
-          text: 'convert [TEXT] to [FORMAT]',
+          text: '[TEXT] 转换到 [FORMAT] 的结果',
           arguments: {
             TEXT: {
               type: Scratch.ArgumentType.STRING,
-              defaultValue: 'Apple'
+              defaultValue: '苹果'
             },
             FORMAT: {
               type: Scratch.ArgumentType.STRING,
@@ -26,11 +26,11 @@ class Strings2 {
           // highlight-start
           items: [
             {
-              text: 'UPPERCASE',
+              text: '大写',
               value: 'up'
             },
             {
-              text: 'lowercase',
+              text: '小写',
               value: 'low'
             }
           ]

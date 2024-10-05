@@ -2,14 +2,14 @@
   'use strict';
 
   if (!Scratch.extensions.unsandboxed) {
-    throw new Error('This example must run unsandboxed');
+    throw new Error('此示例必须无沙箱运行');
   }
 
   class WhenKeyPressed {
     getInfo() {
       return {
         id: 'eventexample2unsandboxed',
-        name: 'Event Block Example 2',
+        name: '事件积木示例 2',
         blocks: [
           {
             blockType: Scratch.BlockType.EVENT,

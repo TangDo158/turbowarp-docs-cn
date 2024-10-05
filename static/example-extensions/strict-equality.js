@@ -2,20 +2,20 @@ class StrictEqualityExtension {
   getInfo() {
     return {
       id: 'strictequalityexample',
-      name: 'Strict Equality',
+      name: '严格相等示例',
       blocks: [
         // highlight-start
         {
           opcode: 'strictlyEquals',
           blockType: Scratch.BlockType.BOOLEAN,
-          text: '[ONE] strictly equals [TWO]',
+          text: '[ONE] 严格等于 [TWO]?',
           arguments: {
             ONE: {
               type: Scratch.ArgumentType.STRING
             },
             TWO: {
               type: Scratch.ArgumentType.STRING,
-              defaultValue: 'Second value'
+              defaultValue: '第二个值'
             }
           }
         }

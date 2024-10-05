@@ -3,7 +3,7 @@ slug: /translate
 hide_table_of_contents: true
 ---
 
-# Help Translate TurboWarp
+# 帮助我们翻译 Turbowarp
 
 We're looking for people to help translate TurboWarp into languages other than English. If that interests you, read on.
 

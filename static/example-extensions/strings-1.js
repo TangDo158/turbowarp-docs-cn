@@ -2,16 +2,16 @@ class Strings1 {
   getInfo() {
     return {
       id: 'strings1example',
-      name: 'Encoding',
+      name: '大小写转换',
       blocks: [
         {
           opcode: 'convert',
           blockType: Scratch.BlockType.REPORTER,
-          text: 'convert [TEXT] to [FORMAT]',
+          text: '[TEXT] 转换到 [FORMAT] 的结果',
           arguments: {
             TEXT: {
               type: Scratch.ArgumentType.STRING,
-              defaultValue: 'Apple'
+              defaultValue: '苹果'
             },
             // highlight-start
             FORMAT: {
@@ -26,7 +26,7 @@ class Strings1 {
       menus: {
         FORMAT_MENU: {
           acceptReporters: true,
-          items: ['uppercase', 'lowercase']
+          items: ['大写', '小写']
         }
       }
       // highlight-end
@@ -34,12 +34,12 @@ class Strings1 {
   }
 
   convert (args) {
-    if (args.FORMAT === 'uppercase') {
-      // Notice the toString() call: TEXT might be a number or boolean,
-      // so we have to make sure to convert it to a string first so that
-      // it has a toUpperCase() function, otherwise we will get an error!
-      // Remember: the argument's "type" is just a suggestion for the
-      // editor; it's never enforced.
+    if (args.FORMAT === '大写') {
+      // 注意到 toString() 调用：TEXT 还可能是一个数字或者布尔值，
+      // 因此我们必须先将其转换为字符串，这样我们才能获得一个 toUpperCase() 成员函数，
+      // 否则就只会报错！
+      // 记住：getInfo() 中 argument 的类型只是用于编辑器的一个建议；
+      // 它从来不是强制的。
       return args.TEXT.toString().toUpperCase();
     } else {
       return args.TEXT.toString().toLowerCase();

@@ -2,7 +2,7 @@
 hide_table_of_contents: true
 ---
 
-# Dealing with things that aren't instant
+# 处理非立即返回值
 
 import {ExtensionCode} from './utils.js';
 

@@ -4,12 +4,12 @@
     getInfo() {
       return {
         id: 'broadcast4example',
-        name: 'Broadcast Example 4',
+        name: '广播示例 4',
         blocks: [
           {
             opcode: 'whenReceived',
             blockType: Scratch.BlockType.HAT,
-            text: 'when I receive [EVENT_OPTION]',
+            text: '当我收到了 [EVENT_OPTION]',
             isEdgeActivated: false,
             arguments: {
               EVENT_OPTION: {
@@ -21,7 +21,7 @@
           {
             opcode: 'broadcast',
             blockType: Scratch.BlockType.COMMAND,
-            text: 'broadcast [EVENT] in [TARGET]',
+            text: '于 [TARGET] 中广播 [EVENT]',
             arguments: {
               EVENT: {
                 type: Scratch.ArgumentType.STRING,
@@ -38,17 +38,17 @@
           EVENT_FIELD: {
             acceptReporters: false,
             items: [
-              'Event 1',
-              'Event 2',
-              'Event 3'
+              '事件 1',
+              '事件 2',
+              '事件 3'
             ]
           },
           TARGET_MENU: {
             acceptReporters: true,
             items: [
-              'all sprites',
-              'this sprite',
-              'the stage'
+              '全部角色',
+              '仅当前角色',
+              '舞台'
             ]
           }
         }
@@ -61,8 +61,8 @@
       };
 
       let targetFilter = null;
-      if (TARGET === 'this sprite') targetFilter = util.target;
-      if (TARGET === 'the stage') targetFilter = util.runtime.getTargetForStage();
+      if (TARGET === '仅当前角色') targetFilter = util.target;
+      if (TARGET === '舞台') targetFilter = util.runtime.getTargetForStage();
 
       util.startHats('broadcast4example_whenReceived', argumentFilter, targetFilter);
     }

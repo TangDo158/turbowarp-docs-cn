@@ -3,7 +3,7 @@
 
   // highlight-start
   if (!Scratch.extensions.unsandboxed) {
-    throw new Error('This Turbo Mode example must run unsandboxed');
+    throw new Error('这个加速模式示例必须不使用沙箱运行');
   }
   const vm = Scratch.vm;
   // highlight-end
@@ -12,12 +12,12 @@
     getInfo() {
       return {
         id: 'turbomodeunsandboxed',
-        name: 'Turbo Mode',
+        name: '加速模式',
         blocks: [
           {
             opcode: 'set',
             blockType: Scratch.BlockType.COMMAND,
-            text: 'set turbo mode to [ENABLED]',
+            text: '[ENABLED] 加速模式',
             arguments: {
               ENABLED: {
                 type: Scratch.ArgumentType.STRING,
@@ -29,14 +29,14 @@
         menus: {
           ENABLED_MENU: {
             acceptReporters: true,
-            items: ['on', 'off']
+            items: ['启用', '禁用']
           }
         }
       };
     }
     // highlight-start
     set(args) {
-      vm.setTurboMode(args.ENABLED === 'on');
+      vm.setTurboMode(args.ENABLED === '启用');
     }
     // highlight-end
   }

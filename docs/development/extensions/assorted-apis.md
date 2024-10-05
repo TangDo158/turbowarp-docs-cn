@@ -2,7 +2,7 @@
 hide_table_of_contents: true
 ---
 
-# Assorted APIs
+# 其它 API
 
 import {ExtensionCode} from './utils.js';
 

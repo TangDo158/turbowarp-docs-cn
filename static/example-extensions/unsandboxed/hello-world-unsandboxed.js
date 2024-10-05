@@ -2,25 +2,25 @@
   'use strict';
 
   if (!Scratch.extensions.unsandboxed) {
-    throw new Error('This Hello World example must run unsandboxed');
+    throw new Error('这个“你好，世界”扩展必须不使用沙箱运行');
   }
 
   class HelloWorld {
     getInfo() {
       return {
         id: 'helloworldunsandboxed',
-        name: 'Unsandboxed Hello World',
+        name: '无沙箱的你好世界',
         blocks: [
           {
             opcode: 'hello',
             blockType: Scratch.BlockType.REPORTER,
-            text: 'Hello!'
+            text: '你好！'
           }
         ]
       };
     }
     hello() {
-      return 'World!';
+      return '世界';
     }
   }
   Scratch.extensions.register(new HelloWorld());

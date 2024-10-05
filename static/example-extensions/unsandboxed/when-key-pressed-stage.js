@@ -2,19 +2,19 @@
   'use strict';
 
   if (!Scratch.extensions.unsandboxed) {
-    throw new Error('This example must run unsandboxed');
+    throw new Error('此示例必须无沙箱运行');
   }
 
   class WhenKeyPressedInStage {
     getInfo() {
       return {
         id: 'eventexample3unsandboxed',
-        name: 'Event Block Example 3',
+        name: '事件积木示例 3',
         blocks: [
           {
             blockType: Scratch.BlockType.EVENT,
             opcode: 'whenPressed',
-            text: 'when [KEY] key pressed',
+            text: '当 [KEY] 键被按下',
             isEdgeActivated: false,
             arguments: {
               KEY: {
@@ -29,7 +29,7 @@
             acceptReporters: false,
             items: [
               {
-                text: 'space',
+                text: '空格',
                 value: ' '
               },
               'a',

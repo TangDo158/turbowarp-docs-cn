@@ -3,7 +3,7 @@ slug: /remove-misc-limits
 hide_table_of_contents: true
 ---
 
-# Remove Miscellaneous Limits
+# 移除其他限制
 
 Disables various limits that aren't significant enough to get a dedicated toggle.
 

@@ -2,7 +2,7 @@
 hide_table_of_contents: true
 ---
 
-# Wrapping up
+# 结语
 
 We hope that you found this tutorial helpful. Please give feedback and ask questions:
 

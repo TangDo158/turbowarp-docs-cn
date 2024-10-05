@@ -3,7 +3,7 @@ slug: /custom-fps
 hide_table_of_contents: true
 ---
 
-# 60 FPS (Custom FPS)
+# 60 FPS (自定义帧率)
 
 Custom FPS (frames per second) changes how often scripts are run every second. Most often this is changed to 60 FPS, but any value between 1 and 250 is possible.
 

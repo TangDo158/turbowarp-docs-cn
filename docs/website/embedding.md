@@ -3,7 +3,7 @@ slug: /embedding
 hide_table_of_contents: true
 ---
 
-# Embedding
+# 嵌入
 
 TurboWarp can be embedded with a standard iframe:
 

@@ -3,7 +3,7 @@ slug: /high-quality-pen
 hide_table_of_contents: true
 ---
 
-# High Quality Pen
+# 高清画笔
 
 High Quality Pen allows pen projects to render at a higher resolution rather than being stuck at 480x360 and disables some coordinate rounding in the editor.
 

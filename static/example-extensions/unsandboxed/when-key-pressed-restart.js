@@ -2,19 +2,19 @@
   'use strict';
 
   if (!Scratch.extensions.unsandboxed) {
-    throw new Error('This example must run unsandboxed');
+    throw new Error('此示例必须无沙箱运行');
   }
 
   class WhenKeyPressed {
     getInfo() {
       return {
         id: 'restartexampleunsandboxed',
-        name: 'Restart Threads Example',
+        name: '重启线程示例',
         blocks: [
           {
             blockType: Scratch.BlockType.EVENT,
             opcode: 'whenPressed',
-            text: 'when [KEY] key pressed',
+            text: '当 [KEY] 键被按下',
             isEdgeActivated: false,
             // highlight-next-line
             shouldRestartExistingThreads: true,
@@ -31,7 +31,7 @@
             acceptReporters: false,
             items: [
               {
-                text: 'space',
+                text: '空格',
                 value: ' '
               },
               'a',

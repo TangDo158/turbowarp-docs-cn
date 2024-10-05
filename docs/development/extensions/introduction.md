@@ -2,7 +2,7 @@
 hide_table_of_contents: true
 ---
 
-# Introduction to custom extensions
+# 自定义扩展导言
 
 Custom extensions are a way for you to add new blocks to TurboWarp using JavaScript.
 

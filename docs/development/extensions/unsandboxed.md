@@ -2,7 +2,7 @@
 hide_table_of_contents: true
 ---
 
-# Unsandboxed extensions
+# 无沙箱扩展
 
 import {ExtensionCode, Spoiler} from './utils.js';
 

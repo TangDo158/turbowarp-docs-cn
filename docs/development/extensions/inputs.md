@@ -2,7 +2,7 @@
 hide_table_of_contents: true
 ---
 
-# Dealing with inputs
+# 处理输入
 
 import {ExtensionCode} from './utils.js';
 

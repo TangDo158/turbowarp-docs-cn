@@ -3,7 +3,7 @@ slug: /javascript
 hide_table_of_contents: true
 ---
 
-# How to download the JavaScript
+# 如何下载编译后的 JavaScript
 
 ## Short Answer {#short}
 

@@ -4,12 +4,12 @@
     getInfo() {
       return {
         id: 'broadcast2example',
-        name: 'Broadcast Example 2',
+        name: '广播示例 2',
         blocks: [
           {
             opcode: 'whenReceived',
             blockType: Scratch.BlockType.HAT,
-            text: 'when I receive [EVENT_OPTION]',
+            text: '当收到了 [EVENT_OPTION]',
             isEdgeActivated: false,
             // highlight-start
             arguments: {
@@ -23,7 +23,7 @@
           {
             opcode: 'broadcast',
             blockType: Scratch.BlockType.COMMAND,
-            text: 'broadcast [EVENT]',
+            text: '广播 [EVENT]',
             // highlight-start
             arguments: {
               EVENT: {
@@ -36,7 +36,7 @@
           {
             opcode: 'broadcastAll',
             blockType: Scratch.BlockType.COMMAND,
-            text: 'broadcast all',
+            text: '广播全部',
           }
         ],
         menus: {
@@ -44,9 +44,9 @@
             // highlight-next-line
             acceptReporters: false,
             items: [
-              'Event 1',
-              'Event 2',
-              'Event 3'
+              '事件 1',
+              '事件 2',
+              '事件 3'
             ]
           }
         }
